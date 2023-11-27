@@ -1,9 +1,9 @@
 "use client"
 import Head from 'next/head'
-import { ChakraProvider } from "@chakra-ui/react";
+import { ChakraProvider, ColorModeScript } from "@chakra-ui/react";
 import { Rubik } from "next/font/google";
 import Layout from "../components/Layout";
-
+import theme from "../theme"
 const rubik = Rubik({ subsets: ["latin"] });
 
 function App({ Component, pageProps }) {
@@ -20,7 +20,8 @@ function App({ Component, pageProps }) {
           }
         `}
       </style>
-      <ChakraProvider>
+      <ChakraProvider theme={theme}>
+      <ColorModeScript initialColorMode={theme.config.initialColorMode} />
         <Layout>
           <Component {...pageProps} />
         </Layout>
