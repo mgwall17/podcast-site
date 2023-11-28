@@ -1,6 +1,6 @@
 // Navbar.js
 "use client"
-import {useState, React} from 'react';
+import { useState, React } from 'react';
 import {
   Box,
   Flex,
@@ -56,7 +56,7 @@ const Navigation = () => {
         <Flex flex={{ base: 1 }} justify={{ base: 'center', md: 'start' }}>
           <Link href="/">
             <HStack>
-              <Box as="img" src="HPG_Logo.png" width={'50px'} alt="Horror Glass Podcast"/><Hide below='md'><Heading as="h1" size="lg" bgGradient="linear(to-r, red.600, orange)"
+              <Box as="img" src="HPG_Logo.png" width={'50px'} alt="Horror Glass Podcast" /><Hide below='md'><Heading as="h1" size="lg" bgGradient="linear(to-r, red.600, orange)"
                 bgClip="text">Horror Glass Podcast</Heading></Hide></HStack>
           </Link>
         </Flex>
@@ -86,20 +86,20 @@ const Navigation = () => {
         </HStack>
       </Flex>
       <Collapse in={isOpen} animateOpacity>
-        <MobileNav isOpen={isOpen} onToggle={onToggle} showAlert={showAlert} setShowAlert={setShowAlert}  />
+        <MobileNav isOpen={isOpen} onToggle={onToggle} showAlert={showAlert} setShowAlert={setShowAlert} />
       </Collapse>
       {showAlert && (
-  <Alert status="success">
-    <AlertIcon />
-    <Text>Thank you for subscribing! We are looking forward to <Text as='em'>occasionally</Text> haunting your inbox with new episodes!</Text>
-    <CloseButton onClick={() => setShowAlert(false)}/>
-  </Alert>
-)}
+        <Alert status="success">
+          <AlertIcon />
+          <Text>Thank you for subscribing! We are looking forward to <Text as='em'>occasionally</Text> haunting your inbox with new episodes!</Text>
+          <CloseButton onClick={() => setShowAlert(false)} />
+        </Alert>
+      )}
     </Box>
   );
 };
 
-const MobileNav = ({ isOpen, onToggle, showAlert, setShowAlert}) => {
+const MobileNav = ({ isOpen, onToggle, showAlert, setShowAlert }) => {
   const handleSubscribe = () => {
     setShowAlert(true);
   };
@@ -110,20 +110,27 @@ const MobileNav = ({ isOpen, onToggle, showAlert, setShowAlert}) => {
   };
   return (
     <Box onClick={handleClose}>
-    <Stack bg={useColorModeValue('white', 'gray.800')} p={4} display={{ md: 'none' }}>
-      <MobileNavItem href="/">Episodes</MobileNavItem>
-      <MobileNavItem href="/About">About</MobileNavItem>
-      <MobileNavItem href="/Contact">Contact</MobileNavItem>
-      <MobileNavItem href="/Blog">Blog</MobileNavItem>
-      <Button onClick={handleSubscribe}>Subscribe</Button>
-      {showAlert && (
-        <Alert status="success">
-          <AlertIcon />
-          <Text>Thank you for subscribing! We are looking forward to <Text as='em'>occasionally</Text> haunting your inbox with new episodes!</Text>
-          <CloseButton onClick={() => setShowAlert(false)}/>
-        </Alert>
-      )}
-    </Stack>
+      <Stack bg={useColorModeValue('white', 'gray.800')} p={4} display={{ md: 'none' }}>
+        <MobileNavItem href="/">Episodes</MobileNavItem>
+        <MobileNavItem href="/About">About</MobileNavItem>
+        <MobileNavItem href="/Contact">Contact</MobileNavItem>
+        <MobileNavItem href="/Blog">Blog</MobileNavItem>
+        <Button width="100%"
+          p={8}
+          m={1}
+          color={useColorModeValue('gray.600', 'gray.200')}
+          _hover={{
+            textDecoration: 'none',
+            color: useColorModeValue('gray.800', 'white'),
+          }} onClick={handleSubscribe}>Subscribe</Button>
+        {showAlert && (
+          <Alert status="success">
+            <AlertIcon />
+            <Text>Thank you for subscribing! We are looking forward to <Text as='em'>occasionally</Text> haunting your inbox with new episodes!</Text>
+            <CloseButton onClick={() => setShowAlert(false)} />
+          </Alert>
+        )}
+      </Stack>
     </Box>
   );
 };
@@ -131,22 +138,23 @@ const MobileNav = ({ isOpen, onToggle, showAlert, setShowAlert}) => {
 const MobileNavItem = ({ children, href }) => {
   return (
     <Box>
-    <Link href={href} passHref>
-      <Button
-       width="100%"
-        p={8}
-        m={1}
-        color={useColorModeValue('gray.600', 'gray.200')}
-        _hover={{
-          textDecoration: 'none',
-          color: useColorModeValue('gray.800', 'white'),
-        }}
-      >
-        {children}
-      </Button>
-    </Link>
+      <Link href={href} passHref>
+        <Button
+          width="100%"
+          p={8}
+          m={1}
+          color={useColorModeValue('gray.600', 'gray.200')}
+          _hover={{
+            textDecoration: 'none',
+            color: useColorModeValue('gray.800', 'white'),
+          }}
+        >
+          {children}
+        </Button>
+      </Link>
     </Box>
   );
-};
+};zs
 
 export default Navigation;
+z
