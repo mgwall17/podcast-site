@@ -7,11 +7,11 @@ export default function Home() {
   return (
     <Box m={4}>
       <Stack>
-        <Center>
-          <Box as="img" src="HPG_Logo.png" width={'200px'} height={'200px'} alt="Horror Glass Podcast" />
+      <Center>
+          <Heading textAlign={'center'}>Welcome to the <br/> Horror Glass Podcast</Heading>
         </Center>
         <Center>
-          <Heading>Welcome to the Horror Glass Podcast</Heading>
+          <Box as="img" src="HPG_Logo.png" width={'200px'} height={'200px'} alt="Horror Glass Podcast" />
         </Center>
       </Stack>
       <Center>
