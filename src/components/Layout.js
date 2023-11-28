@@ -11,11 +11,11 @@ export default function Layout({ children }) {
       <Box mt="5" mb="2" as="footer">
         <Text align="center">
           {"Copyright © "}
-          Jose Zaragoza II {new Date().getFullYear()}
+          Mariah Wall {new Date().getFullYear()}
           {"."}
         </Text>
         <Text align="center" fontSize='xs'>
-          Developed by Mariah Wall Design
+          Developed for educational purposes only.
         </Text>
       </Box>
     </div>
