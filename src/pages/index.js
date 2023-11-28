@@ -1,5 +1,5 @@
 import { Inter } from 'next/font/google'
-import { Heading, Center, StackDivider, VStack, Stack, Text, Box } from '@chakra-ui/react'
+import { Heading,Hide, Center, StackDivider, VStack, Stack, Text, Box } from '@chakra-ui/react'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -10,14 +10,15 @@ export default function Home() {
       <Center>
           <Heading textAlign={'center'}>Welcome to the <br/> Horror Glass Podcast</Heading>
         </Center>
-        <Center>
+        <Hide below="sm">
+        <Center mt={4}>
           <Box as="img" src="HPG_Logo.png" width={'200px'} height={'200px'} alt="Horror Glass Podcast" />
-        </Center>
+        </Center></Hide>
       </Stack>
       <Center>
         <VStack divider={<StackDivider borderColor='gray.200' />}
           spacing={4}
-          align='stretch' p={8} maxW={'65vw'}>
+          align='stretch' mt={[8,2,2]} p={[0,4,8]} w={['100vw', '70vw', '75vw']}>
           <Box>
           <Heading mb={2} as="p" size="md">Hey there, horror enthusiasts! I am your host, Jose!
           </Heading> 
