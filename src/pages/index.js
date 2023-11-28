@@ -1,6 +1,5 @@
 import { Inter } from 'next/font/google'
 import { Heading, Center, Text, Box } from '@chakra-ui/react'
-import "@lottiefiles/lottie-player";
 
 const inter = Inter({ subsets: ['latin'] })
 
