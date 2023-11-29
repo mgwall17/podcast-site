@@ -40,7 +40,7 @@ export default function Episodes() {
           summary="A group of researchers in Antarctica discover an extraterrestrial organism that assimilates and imitates other life forms, creating an atmosphere of paranoia and fear as they struggle to determine who among them has been taken over by the shape-shifting entity. As trust erodes and survival becomes uncertain, the film unfolds as a suspenseful and chilling exploration of isolation and the terrifying unknown."
           comingSoon={true}
           premier_date={"December 2023"}
-          guest={"Greg reveals how this movie changed his life, how incredible the effects stand the test of time and discusses one the most ambiguous endings in horror history."}
+          guest={"George reveals how this movie changed his life, how incredible the effects stand the test of time and discusses one the most ambiguous endings in horror history."}
         />
           </Box>
         </Stack>
