@@ -56,7 +56,7 @@ const Navigation = () => {
         <Flex flex={{ base: 1 }} justify={{ base: 'center', md: 'start' }}>
           <Link href="/">
             <HStack>
-              <Box as="img" src="HPG_Logo.png" width={'50px'} alt="Horror Glass Podcast" /><Hide below='md'><Heading as="h1" size="lg" bgGradient="linear(to-r, red.600, orange)"
+              <Box as="img" src="HPG_Logo.png" width={'50px'} alt="Horror Glass Podcast" /><Hide below='md'><Heading as="h1" size="lg" bgGradient="linear(to-r, white, purple.300)"
                 bgClip="text">Horror Glass Podcast</Heading></Hide></HStack>
           </Link>
         </Flex>
@@ -79,9 +79,9 @@ const Navigation = () => {
             fontSize={'sm'}
             fontWeight={600}
             color={'white'}
-            bg={'orange.600'}
+            bg={'purple.500'}
             _hover={{
-              bg: 'orange.400',
+              bg: 'purple.400',
             }}
           >
             Subscribe

@@ -5,7 +5,7 @@ export default function Episodes() {
   return (
     <div>
       <Container>
-        <Heading as="h1" size="xl" color="orange">Horror Glass Podcast Episodes</Heading>
+        <Heading as="h1" size="xl" color="purple.300">Horror Glass Podcast Episodes</Heading>
         <Stack spacing={4} m={8}>
         <Link href="https://soundcloud.com/jose-zaragoza-480556966/through-the-horror-glass-episode-1-psycho?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing"><Heading as="h3" size="md">Episode 1: Psycho</Heading>
         <Text>October, 2023</Text></Link>
