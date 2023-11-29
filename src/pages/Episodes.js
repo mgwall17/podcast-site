@@ -17,7 +17,7 @@ export default function Episodes() {
           summary="A secretary embezzles money and checks into a secluded motel run by the mysterious Norman Bates. The narrative takes a shocking turn with the infamous shower scene, leading to a psychological thriller that explores the depths of madness and the unsettling consequences of fractured identities."
           comingSoon={false}
           isPublished={true}
-          publish_date={"October 2023"}
+          publish_date={"September 4, 2023"}
           guest={"Steven delights us with little known facts and music score commentary and discusses the cultural impact this unique plot has on future cinema."}
           iframe={<iframe
             width="100%"

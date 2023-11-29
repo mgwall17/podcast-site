@@ -8,21 +8,17 @@ const MovieCard = ({ title, image, dateReleased, director, summary, comingSoon, 
       {comingSoon && (
           <Center>
           <Badge colorScheme="purple" fontSize="lg" p={4} mb={4} width="100%">
-            <Text align="center">Episode Releases {premier_date}</Text>
+            <Text align="center">Coming Soon: {premier_date}</Text>
           </Badge>
           </Center>
         )}
       <Box>
-        {isPublished && (
-          <Center>
-          <Badge colorScheme="green" fontSize="lg" p={4} mb={4} width="100%">
-            <Text align="center">Uploaded {publish_date}</Text>
-          </Badge>
-          </Center>
-        )}
         <Text fontSize="2xl" fontWeight="bold" px={2}>
           {title}
         </Text>
+        {isPublished && (
+            <Text px={2}>{publish_date}</Text>
+        )}
         {isPublished && (
           <Box p={2}>
             {iframe}
