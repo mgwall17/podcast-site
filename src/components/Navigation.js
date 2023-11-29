@@ -76,9 +76,9 @@ const Navigation = () => {
             fontSize={'sm'}
             fontWeight={600}
             color={'white'}
-            bg={'orange.400'}
+            bg={'orange.600'}
             _hover={{
-              bg: 'orange.300',
+              bg: 'orange.400',
             }}
           >
             Subscribe
