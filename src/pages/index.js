@@ -11,9 +11,9 @@ export default function Home() {
           <Heading textAlign={'center'} bgGradient="linear(to-r, white, purple.300)"
                 bgClip="text">Welcome to the <br/> Horror Glass Podcast</Heading>
         </Center>
-        <Hide below="sm">
+        <Hide below="lg">
         <Center mt={4}>
-          <Box as="img" src="HPG_Logo.png" width={'200px'} height={'200px'} alt="Horror Glass Podcast" />
+          <Box as="img" src="HPG_Logo_Purple.png" width={'200px'} height={'200px'} alt="Horror Glass Podcast" />
         </Center></Hide>
       </Stack>
       <Center>
@@ -23,7 +23,7 @@ export default function Home() {
           <Box>
             <Center>
               <Stack>
-          <Heading align={'center'} mb={2} as="p" size="2xl" bgGradient="linear(to-r, white, purple.300)"
+          <Heading p={2} align={'center'} mb={2} as="p" size="2xl" bgGradient="linear(to-r, white, purple.300)"
                 bgClip="text">Calling all horror fans!
           </Heading> 
             <Text fontSize='2xl' align={'center'} >
