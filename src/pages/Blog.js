@@ -7,7 +7,7 @@ export default function Blog() {
       <Container>
         <Heading>My Current Investigations</Heading>
         <Text mt={2}>
-          As your host, I will be your guide through the horror glass. I am a master of horror and delight.
+          Most Recent
         </Text>
       </Container>
     </div>

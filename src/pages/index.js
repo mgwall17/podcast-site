@@ -25,12 +25,11 @@ export default function Home() {
           <Heading align={'center'} mb={2} as="p" size="2xl">Calling all horror fans!
           </Heading> 
             <Text fontSize='2xl' align={'center'} >
-           My name is Jose Zaragoza, and as a fellow lover of all things eerie, I'm thrilled to invite you on a journey through the world of horror movies. In each episode, I sit down with a random guest who, like you and me, has been profoundly impacted by a particular horror film. Together, we unravel the psychological layers that make these movies so captivating.
+           My name is Jose Zaragoza, and as a fellow lover of all things scary, I'm thrilled to invite you on a journey through the world of horror movies. In each episode, I sit down with a random guest who, like you and me, has been profoundly impacted by a particular horror film. Together, we unravel the psychological layers that make these movies so captivating.
           </Text>
           </Stack>
           </Center>
-          </Box>
-          <Heading align={'center'}>So what is Horror Glass about?</Heading>
+          <Heading  mt={8} align={'center'}>So what is Horror Glass about?</Heading></Box>
           <Box>
           <HStack><MoonIcon color={"orange"} /><Heading mb={2} as="h3" size="md">Sharing Chills</Heading></HStack>
             <Text>

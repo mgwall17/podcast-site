@@ -61,8 +61,11 @@ const Navigation = () => {
           </Link>
         </Flex>
         <HStack flex={{ base: 1, md: 0 }} justify={'flex-end'} spacing={6}>
-          <Button display={{ base: 'none', md: 'inline-flex' }} as={Link} href="/" fontSize={'sm'} fontWeight={400}>
+          <Button display={{ base: 'none', md: 'inline-flex' }} as={Link} href="/Episodes" fontSize={'sm'} fontWeight={400}>
             Episodes
+          </Button>
+          <Button display={{ base: 'none', md: 'inline-flex' }} as={Link} href="/Blog" fontSize={'sm'} fontWeight={400}>
+            Blog
           </Button>
           <Button display={{ base: 'none', md: 'inline-flex' }} as={Link} href="/About" fontSize={'sm'} fontWeight={400}>
             About
@@ -111,7 +114,7 @@ const MobileNav = ({ isOpen, onToggle, showAlert, setShowAlert }) => {
   return (
     <Box onClick={handleClose}>
       <Stack bg={useColorModeValue('white', 'gray.800')} p={4} display={{ md: 'none' }}>
-        <MobileNavItem href="/">Episodes</MobileNavItem>
+        <MobileNavItem href="/Episodes">Episodes</MobileNavItem>
         <MobileNavItem href="/About">About</MobileNavItem>
         <MobileNavItem href="/Contact">Contact</MobileNavItem>
         <MobileNavItem href="/Blog">Blog</MobileNavItem>
