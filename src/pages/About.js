@@ -1,21 +1,23 @@
 /* eslint-disable react/no-unescaped-entities */
 "use client";
 import { Link } from "@chakra-ui/next-js";
-import { Container,Box,Center, Heading, Text, VStack } from "@chakra-ui/react";
+import { Container,Box,Center,Code, Heading, Text, Stack } from "@chakra-ui/react";
 export default function About() {
   return (
     <div>
       <Container>
-        <Center>
-        <VStack spacing={4} align='stretch' mt={[8,2,2]} p={[0,4,8]} w={['100vw', '70vw', '90vw']}>
-        <Box>
-        <Heading mb={4} size="lg">About the Host</Heading>
-        <Text>
-          My name is Jose Zaragoza. Nice to meet you! </Text>
-          <Text mt={2}>I'm a recent graduate of the Masters in Digital Marketing program at Arizona State University. Armed with a passion for horror and a freshly minted degree, I've embarked on an expedition to bring you the spine-chilling wonders of my Horror Glass Podcast.
+        <Box width="100%" align={'center'}>
+          <Box align="center" as="img" src="jose.png" width={"250px"} />
+        <Box bgColor="gray.100" rounded="10px" width={"250px"} m={4}>
+        <Text color="gray.700">
+          My name's Jose Zaragoza! <br/> Nice to meet you!
           </Text>
           </Box>
+          </Box>
           <Box>
+          <Heading mb={4} size="lg">About the Host</Heading>
+          <Text mt={2}>I'm a recent graduate of the Masters in Digital Marketing program at Arizona State University. Armed with a passion for horror and a freshly minted degree, I've embarked on an expedition to bring you the spine-chilling wonders of my Horror Glass Podcast.
+          </Text>
           <Heading mb={4} size="lg">Why I made Horror Glass</Heading>
             <Text>
             Fostering a conversation with fellow avid fans isn't just about discussing scary movies; it's a shared exploration of the visceral and psychological impact that these films have on individuals and society. By engaging in conversations with fellow enthusiasts, we unearth personal experiences, diverse perspectives, and the nuanced emotions that make horror a unique and captivating genre. My podcast serves as a communal space where the love for horror is celebrated, fostering a sense of connection and understanding among listeners. Beyond being a platform for entertainment, Horror Glass Podcast becomes a shared journey through the realms of fear, where the passion for the genre takes center stage, offering listeners a chance to revel in the thrills and chills that unite horror fans worldwide.
@@ -37,8 +39,6 @@ export default function About() {
           Thank you for being a part of the Horror Glass journey!
           </Text>
           </Box>
-        </VStack>
-        </Center>
       </Container>
     </div>
   );

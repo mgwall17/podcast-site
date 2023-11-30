@@ -4,7 +4,7 @@ import { Box, Image, Text, Badge,Center, Divider, } from '@chakra-ui/react';
 const MovieCard = ({ title, image, dateReleased, director, summary, comingSoon, premier_date, guest, publish_date, isPublished, iframe }) => {
   return (
     <Box maxW="100%" borderWidth="1px" borderRadius="lg" overflow="hidden" boxShadow="lg" bgColor={"gray.700"}>
-      <Box as="img" src={image} alt={title} />
+      <Box as="img" src={image} alt={title} width={'100%'}/>
       {comingSoon && (
           <Center>
           <Badge colorScheme="purple" fontSize="lg" p={4} mb={4} width="100%">

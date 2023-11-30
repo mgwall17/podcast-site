@@ -4,10 +4,9 @@ import { Container, Heading, Stack, Text, Box } from "@chakra-ui/react";
 import MovieCard from "../components/MovieCard";
 export default function Episodes() {
   return (
-    <div>
-      <Container>
-        <Heading as="h1" size="xl" color="purple.300" align={'center'}>Episodes</Heading>
-        <Stack spacing={4} m={8}>
+    <Container>
+        <Heading as="h1" size="xl" color="purple.300" align={'center'} mb={4}>Episodes</Heading>
+        <Stack spacing={8}>
           <Box>
           <MovieCard
           title="Episode 1: Psycho"
@@ -28,9 +27,7 @@ export default function Episodes() {
           ></iframe>}
         />
           </Box>
-        </Stack>
         <Heading align={"center"} as="h2" size="lg" color="purple.400">Upcoming Episodes</Heading>
-        <Stack spacing={4} m={8}>
           <Box>
           <MovieCard
           title="Episode 2: The Thing"
@@ -43,8 +40,6 @@ export default function Episodes() {
           guest={"George reveals how this movie changed his life, how incredible the effects stand the test of time and discusses one the most ambiguous endings in horror history."}
         />
           </Box>
-        </Stack>
-        <Stack spacing={4} m={8}>
         <Box>
           <MovieCard
           title="Episode 3: Hellraiser"
@@ -57,8 +52,31 @@ export default function Episodes() {
           guest={"Mariah tells us about how Hellraiser awed her with practical effects, introduced her to body horror, and how it explores the limits of pleasure and pain with its characters."}
         />
           </Box>
+          <Box>
+          <MovieCard
+          title="Episode 4: Halloween"
+          image="Halloween.jpeg"
+          dateReleased="1978"
+          director="John Carpenter"
+          summary="A masked killer named Michael Myers escapes from a mental institution and returns to his hometown on Halloween night. As he terrorizes babysitter Laurie Strode, the film unfolds as a suspenseful and iconic slasher, setting the standard for the genre and introducing audiences to the haunting figure of Michael Myers."
+          comingSoon={true}
+          premier_date={"February 2024"}
+          guest={"Mario discusses this masterclass of Slasher and how Michael Myers continues to stalk his mind to this day."}
+        />
+          </Box>
+          <Box>
+          <MovieCard
+          title="Episode 5: The Autopsy of Jane Doe"
+          image="JaneDoe.jpg"
+          dateReleased="2016"
+          director="André Øvredal"
+          summary="A father-son coroner duo receives an unidentified female corpse for examination. As they delve into the autopsy, they uncover increasingly disturbing and supernatural secrets, leading to a night of terror within the confines of their mortuary."
+          comingSoon={true}
+          premier_date={"March 2024"}
+          guest={"Susan and Mike discuss with me how surprising this movie was for them and the unique set-up and excellent use of mystery they observed in this film."}
+        />
+          </Box>
         </Stack>
-      </Container>
-    </div>
+    </Container>
   );
 }
