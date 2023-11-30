@@ -23,10 +23,10 @@ export default function Home() {
           <Box>
             <Center>
               <Stack>
-          <Heading p={2} align={'center'} mb={2} as="p" size="2xl" bgGradient="linear(to-r, white, purple.300)"
-                bgClip="text">Calling all horror fans!
+          <Heading p={2} align={'center'} mb={2} as="p" size="xl" bgGradient="linear(to-r, white, purple.300)"
+                bgClip="text">Calling All Horror Fans!
           </Heading> 
-            <Text fontSize='2xl' align={'center'} >
+            <Text >
            My name is Jose Zaragoza, and as a fellow lover of all things scary, I'm thrilled to invite you on a journey through the world of horror movies. In each episode, I sit down with a random guest who, like you and me, has been profoundly impacted by a particular horror film. Together, we unravel the psychological layers that make these movies so captivating.
           </Text>
           </Stack>
