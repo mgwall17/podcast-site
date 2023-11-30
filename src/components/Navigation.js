@@ -115,9 +115,9 @@ const MobileNav = ({ isOpen, onToggle, showAlert, setShowAlert }) => {
     <Box onClick={handleClose}>
       <Stack bg={useColorModeValue('white', 'gray.800')} p={4} display={{ md: 'none' }}>
         <MobileNavItem href="/Episodes">Episodes</MobileNavItem>
+        <MobileNavItem href="/Blog">Blog</MobileNavItem>
         <MobileNavItem href="/About">About</MobileNavItem>
         <MobileNavItem href="/Contact">Contact</MobileNavItem>
-        <MobileNavItem href="/Blog">Blog</MobileNavItem>
         <Button width="100%"
           p={8}
           m={1}
