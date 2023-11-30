@@ -7,7 +7,7 @@ export default function Layout({ children }) {
     <div>
       <Navigation />
       <Breadcrumbs />
-      <Container maxW='4xl' centerContent>{children}</Container>
+      <Container maxW='4xl' p={2} centerContent>{children}</Container>
       <Box mt="5" mb="2" as="footer">
         <Text align="center">
           {"Copyright © "}
