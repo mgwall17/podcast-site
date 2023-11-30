@@ -1,11 +1,11 @@
 /* eslint-disable react/no-unescaped-entities */
 import { Inter } from 'next/font/google'
-import { Heading,Hide, Center,HStack, StackDivider, VStack, Stack, Text, Box } from '@chakra-ui/react'
+import { Heading,Container, Hide, Center,HStack, StackDivider, VStack, Stack, Text, Box } from '@chakra-ui/react'
 import { MoonIcon } from '@chakra-ui/icons'
 
 export default function Home() {
   return (
-    <Box m={4}>
+    <Container m={4}>
       <Stack>
       <Center>
           <Heading textAlign={'center'} bgGradient="linear(to-r, white, purple.300)"
@@ -65,6 +65,6 @@ export default function Home() {
           </Box>
         </VStack>
       </Center>
-    </Box>
+    </Container>
   )
 }
