@@ -20,7 +20,7 @@ export default function About() {
           </Text>
           <Box my={4}>
             <Text>
-          Connect with me on <Badge colorScheme={"orange"}>Sound Cloud</Badge>  or  <Badge colorScheme={"blue"}> LinkedIn</Badge>  to stay updated on the latest episodes, behind-the-scenes shenanigans, and perhaps some story-telling insights thrown in for good measure.
+          Connect with me on <Link href="https://soundcloud.com/jose-zaragoza-480556966" isExternal><Badge colorScheme={"orange"}>Sound Cloud</Badge></Link>   or  <Link href="https://www.linkedin.com/in/jose-zaragoza-ii-a1b448186/" isExternal><Badge colorScheme={"blue"}>LinkedIn</Badge></Link>  to stay updated on the latest episodes, behind-the-scenes shenanigans, and perhaps some story-telling insights thrown in for good measure.
           </Text>
           <Box my={2}>
           <Text>

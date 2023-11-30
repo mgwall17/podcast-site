@@ -14,9 +14,9 @@ export default function Contact() {
           Luckily it's not as complicated as performing a seance or a spell. Just click on the links below to reach me on SoundCloud, LinkedIn or email.
         </Text>
         <Stack>
-          <Button colorScheme={"purple"}>SoundCloud</Button>
-          <Button colorScheme={"purple"}>LinkedIn</Button>
-          <Button colorScheme={"purple"}>Email Me</Button>
+          <Button as={Link} href="https://soundcloud.com/jose-zaragoza-480556966" isExternal colorScheme={"purple"}>SoundCloud</Button>
+          <Button as={Link} href="https://www.linkedin.com/in/jose-zaragoza-ii-a1b448186/" isExternal colorScheme={"purple"}>LinkedIn</Button>
+          <Button as={Link} href="mailto:jzaragoza2@gmail.com" isExternal colorScheme={"purple"}>Email Me</Button>
         </Stack>
       <Box my={4}>
       <Heading size={"md"} align="center"my={4}>Want to be a Guest?</Heading>
