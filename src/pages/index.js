@@ -36,7 +36,7 @@ export default function Home() {
           <Box>
           <HStack><MoonIcon color={"purple.100"} /><Heading mb={2} as="h3" size="md">Sharing Chills</Heading></HStack>
             <Text>
-              Join me every week as I chat with a diverse range of guests—die-hard horror fans, first-time thrill-seekers, and everyone in between. We go beyond the standard movie review, digging into personal experiences, unexpected twists, and the lasting impressions these films leave on our minds.
+              Join me once a month as I chat with a diverse range of guests—die-hard horror fans, first-time thrill-seekers, and everyone in between. We go beyond the standard movie review, digging into personal experiences, unexpected twists, and the lasting impressions these films leave on our minds.
             </Text>
           </Box>
           <Box>
@@ -55,12 +55,6 @@ export default function Home() {
           <HStack><MoonIcon color={"purple.400"} /><Heading mb={2} as="h3" size="md">Never Miss a Terrifying Tale</Heading></HStack>
           <Text>
             Don't want to miss out on the scares and insights? Subscribe to Horror Glass Podcast and join me each month for a new guest, a new movie, and a fresh exploration of the psychological terrain that makes horror cinema so uniquely captivating.
-          </Text>
-          </Box>
-          <Box>
-          <HStack><MoonIcon color={"purple.500"} /><Heading mb={2} as="h3" size="md">Step into Nightmares and Beyond</Heading></HStack>
-          <Text>
-            Are you ready to step into the nightmares of our guests? Join the conversation on Horror Glass Podcast, where the chills are as real as the stories we unravel. The shadows are beckoning, and the stories are about to unfold— don't miss out on this journey into the heart of horror.
           </Text>
           </Box>
         </VStack>

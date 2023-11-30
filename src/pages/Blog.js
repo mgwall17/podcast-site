@@ -28,6 +28,16 @@ export default function Blog() {
         </Box>
         </Link>
         </Box>
+        <Box>
+        <Link href="/Blog/Hellraiser-Hook-line-and-shiver">
+        <Box as="div" m={4} p={4} bgColor={'purple.800'} rounded={'10px'} _hover={{ bgColor: 'purple.600' }}>
+            <Heading size="lg" as="h2">Hellraiser: Hook, Line and Shiver
+            </Heading>
+          <Heading size="md" as="h3">November 11th, 2023</Heading>
+          <Text as="i">By Jose Zaragoza</Text>
+        </Box>
+        </Link>
+        </Box>
         </Stack>
       </Container>
     </div>
