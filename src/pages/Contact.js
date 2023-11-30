@@ -10,7 +10,7 @@ export default function Contact() {
         <Box align="center">
         <Box as="img" src="jose_glass.png" width={"250px"} />
         </Box>
-        <Text my={4} fontSize={"lg"}>
+        <Text my={4} fontSize={"lg"} align={'center'}>
           Luckily it's not as complicated as performing a seance or a spell. Just click on the links below to reach me on SoundCloud, LinkedIn or email.
         </Text>
         <Stack>
