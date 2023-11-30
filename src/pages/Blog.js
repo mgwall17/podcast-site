@@ -6,7 +6,7 @@ export default function Blog() {
   return (
     <div>
       <Container>
-        <Heading as="h1">Horror Glass Blog</Heading>
+        <Heading as="h1" align="center" color="purple.400">Horror Glass Blog</Heading>
         <Stack>
         <Box>
         <Link href="/Blog/Psycho-the-ultimate-classic">

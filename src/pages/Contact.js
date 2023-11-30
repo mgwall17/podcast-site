@@ -6,7 +6,7 @@ export default function Contact() {
   return (
     <div>
       <Container>
-        <Heading align="center"my={4}>How to Contact Me</Heading>
+        <Heading as="h1" align="center" color="purple.400"my={4}>How to Contact Me</Heading>
         <Box align="center">
         <Box as="img" src="jose_glass.png" width={"250px"} />
         </Box>

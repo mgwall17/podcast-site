@@ -6,6 +6,7 @@ export default function About() {
   return (
     <div>
       <Container>
+      <Heading mb={4} as="h1" align="center" color="purple.400">About Me</Heading>
         <Box width="100%" align={'center'}>
           <Box align="center" as="img" src="jose.png" width={"250px"} bgGradient="linear(to-t, white, purple.300)" rounded={'100%'} />
         <Box bgColor="gray.100" rounded="10px" width={"250px"} m={4} p={2}>
@@ -15,7 +16,6 @@ export default function About() {
           </Box>
           </Box>
           <Box>
-          <Heading align={'center'} mb={4} size="lg">About the Host</Heading>
           <Text mt={2}>I'm a recent graduate of the Masters in Digital Marketing program at Arizona State University. Armed with a passion for horror and a freshly minted degree, I've embarked on an expedition to bring you the spine-chilling wonders of my Horror Glass Podcast.
           </Text>
           <Box my={4}>
