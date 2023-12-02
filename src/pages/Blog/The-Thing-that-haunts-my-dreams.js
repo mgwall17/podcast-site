@@ -9,7 +9,7 @@ export default function Thing() {
         <Heading size="md" as="h2">October 12th, 2023</Heading>
         <Text as="i">By Jose Zaragoza</Text>
         <Text>
-        There are few films that have left me as haunted and captivated as John Carpenter's "The Thing." Released in 1982, this cinematic masterpiece not only redefined the horror genre but also left an indelible mark on both cinema and popular culture.
+        Released in 1982, this cinematic masterpiece not only redefined the horror genre but also left an indelible mark on both cinema and popular culture.
         </Text>
         <Heading size="md" as="h3">A Cinematic Revolution</Heading>
         <Text>

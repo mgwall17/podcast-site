@@ -10,7 +10,7 @@ export default function Psycho() {
         <Heading size="md" as="h2">September 3rd, 2023</Heading>
         <Text as="i">By Jose Zaragoza</Text>
         <Text>
-          As a devoted horror aficionado, there are few films that have left an indelible mark on my psyche quite like Alfred Hitchcock's masterpiece, "Psycho." From its spine-tingling shower scene to the ominous Bates Motel, this cinematic gem has become a timeless emblem of terror, captivating audiences across generations. In this exploration, I aim to dissect the cultural significance of "Psycho" and unravel the threads that make it an enduring icon in the horror genre.
+          From its spine-tingling shower scene to the ominous Bates Motel, this cinematic gem has become a timeless emblem of terror, captivating audiences across generations. In this exploration, I aim to dissect the cultural significance of "Psycho" and unravel the threads that make it an enduring icon in the horror genre.
         </Text>
         <Heading size="md" as="h3">The Power of Hitchcock's Psycho</Heading>
         <Text>
