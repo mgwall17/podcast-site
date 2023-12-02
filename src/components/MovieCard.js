@@ -8,7 +8,7 @@ const MovieCard = ({ title, image, dateReleased, director, summary, comingSoon, 
       {comingSoon && (
           <Center>
           <Badge colorScheme="purple" fontSize="lg" p={4} mb={4} width="100%">
-            <Text align="center">Coming Soon: {premier_date}</Text>
+            <Text align="center">{premier_date}</Text>
           </Badge>
           </Center>
         )}
