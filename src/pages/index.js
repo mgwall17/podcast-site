@@ -8,8 +8,7 @@ export default function Home() {
     <Container m={4}>
       <Stack>
       <Center>
-          <Heading textAlign={'center'} bgGradient="linear(to-r, white, purple.300)"
-                bgClip="text">Welcome to the <br/> Horror Glass Podcast</Heading>
+          <Heading textAlign={'center'}>Welcome to the <br/> Horror Glass Podcast</Heading>
         </Center>
         <Hide below="lg">
         <Center mt={4}>
@@ -23,16 +22,14 @@ export default function Home() {
           <Box>
             <Center>
               <Stack>
-          <Heading p={2} align={'center'} mb={2} as="p" size="xl" bgGradient="linear(to-r, white, purple.300)"
-                bgClip="text">Calling All Horror Fans!
+          <Heading p={2} align={'center'} mb={2} as="p" size="xl" >Calling All Horror Fans!
           </Heading> 
             <Text >
            My name is Jose Zaragoza, and as a fellow lover of all things scary, I'm thrilled to invite you on a journey through the world of horror movies. In each episode, I sit down with a random guest who, like you and me, has been profoundly impacted by a particular horror film. Together, we unravel the psychological layers that make these movies so captivating.
           </Text>
           </Stack>
           </Center>
-          <Heading  mt={8} align={'center'} bgGradient="linear(to-r, white, purple.300)"
-                bgClip="text">So what is Horror Glass about?</Heading></Box>
+          <Heading  mt={8} align={'center'}>So what is Horror Glass about?</Heading></Box>
           <Box>
           <HStack><MoonIcon color={"purple.100"} /><Heading mb={2} as="h3" size="md">Sharing Chills</Heading></HStack>
             <Text>
