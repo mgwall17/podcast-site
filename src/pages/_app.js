@@ -11,7 +11,7 @@ function App({ Component, pageProps }) {
     <>
       <Head>
         <title>Horror Glass Podcast</title>
-        <meta name="Home Page" content="Horror Glass Podcast is all about unmasking the fears that resonate on a personal level. I'm here to share the untold stories behind the screams and explore the ways in which these films have left an indelible mark on the lives of my guests—and, hopefully, on yours too." />
+        <meta name="description" content="Horror Glass Podcast is all about unmasking the fears that resonate on a personal level. I'm here to share the untold stories behind the screams and explore the ways in which these films have left an indelible mark on the lives of my guests—and, hopefully, on yours too." />
 
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
