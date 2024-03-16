@@ -5,7 +5,7 @@ import MovieCard from "../components/MovieCard";
 export default function Episodes() {
   return (
     <Container>
-        <Heading as="h1" size="xl" color="purple.300" align={'center'} mb={4}>Episodes</Heading>
+        <Heading as="h1" size="xl" align={'center'} mb={4}>Episodes</Heading>
         <Stack spacing={8}>
           <Box>
           <MovieCard
@@ -19,15 +19,10 @@ export default function Episodes() {
           publish_date={"September 4, 2023"}
           guest={"Steven delights us with little known facts and music score commentary and discusses the cultural impact this unique plot has on future cinema."}
           iframe={<iframe
-            width="100%"
-            height="166"
-            allow="autoplay"
-            src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1608331935&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
-            title="SoundCloud Player"
-          ></iframe>}
+          src="https://open.spotify.com/embed/show/2TTfdtQ83xCbaSlv1yVdTt?utm_source=generator" width="100%" height="152" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>}
         />
           </Box>
-        <Heading align={"center"} as="h2" size="lg" color="purple.400">Upcoming Episodes</Heading>
+        <Heading align={"center"} as="h2" size="lg">Upcoming Episodes</Heading>
           <Box>
           <MovieCard
           title="Episode 2: The Thing"

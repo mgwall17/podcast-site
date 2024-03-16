@@ -13,10 +13,6 @@ import {
   HStack,
   Heading,
   Hide,
-  Alert,
-  AlertIcon,
-  CloseButton,
-  Text
 } from '@chakra-ui/react';
 import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons';
 import Link from 'next/link';
@@ -56,48 +52,27 @@ const Navigation = () => {
         <Flex flex={{ base: 1 }} justify={{ base: 'center', md: 'start' }}>
           <Link href="/">
             <HStack>
-              <Box as="img" src="HPG_Logo_Purple.png" width={'50px'} alt="Horror Glass Podcast" /><Hide below='lg'><Heading as="h1" size="lg" bgGradient="linear(to-r, white, purple.300)"
-                bgClip="text">Horror Glass Podcast</Heading></Hide></HStack>
+              <Box as="img" src="HPG_Logo_Purple.png" width={'50px'} alt="Horror Glass Podcast" /><Hide below='lg'><Heading as="h1" size="lg">Horror Glass Podcast</Heading></Hide></HStack>
           </Link>
         </Flex>
         <HStack flex={{ base: 1, md: 0 }} justify={'flex-end'} spacing={6}>
-          <Button display={{ base: 'none', md: 'inline-flex' }} as={Link} href="/Episodes" fontSize={'sm'} fontWeight={400}>
+          <Button colorScheme={"purple"} display={{ base: 'none', md: 'inline-flex' }} as={Link} href="/Episodes" fontSize={'sm'} fontWeight={400}>
             Episodes
           </Button>
-          <Button display={{ base: 'none', md: 'inline-flex' }} as={Link} href="/Blog" fontSize={'sm'} fontWeight={400}>
+          <Button colorScheme={"purple"} display={{ base: 'none', md: 'inline-flex' }} as={Link} href="/Blog" fontSize={'sm'} fontWeight={400}>
             Blog
           </Button>
-          <Button display={{ base: 'none', md: 'inline-flex' }} as={Link} href="/About" fontSize={'sm'} fontWeight={400}>
+          <Button colorScheme={"purple"} display={{ base: 'none', md: 'inline-flex' }} as={Link} href="/About" fontSize={'sm'} fontWeight={400}>
             About
           </Button>
-          <Button display={{ base: 'none', md: 'inline-flex' }} as={Link} href="/Contact" fontSize={'sm'} fontWeight={400}>
+          <Button colorScheme={"purple"} display={{ base: 'none', md: 'inline-flex' }} as={Link} href="/Contact" fontSize={'sm'} fontWeight={400}>
             Contact
-          </Button>
-          <Button
-            onClick={handleSubscribe}
-            display={{ base: 'none', md: 'inline-flex' }}
-            fontSize={'sm'}
-            fontWeight={600}
-            color={'white'}
-            bg={'purple.500'}
-            _hover={{
-              bg: 'purple.400',
-            }}
-          >
-            Subscribe
           </Button>
         </HStack>
       </Flex>
       <Collapse in={isOpen} animateOpacity>
         <MobileNav isOpen={isOpen} onToggle={onToggle} showAlert={showAlert} setShowAlert={setShowAlert} />
       </Collapse>
-      {showAlert && (
-        <Alert status="success">
-          <AlertIcon />
-          <Text>Thank you for subscribing! We are looking forward to <Text as='em'>occasionally</Text> haunting your inbox with new episodes!</Text>
-          <CloseButton onClick={() => setShowAlert(false)} />
-        </Alert>
-      )}
     </Box>
   );
 };
@@ -118,21 +93,6 @@ const MobileNav = ({ isOpen, onToggle, showAlert, setShowAlert }) => {
         <MobileNavItem href="/Blog">Blog</MobileNavItem>
         <MobileNavItem href="/About">About</MobileNavItem>
         <MobileNavItem href="/Contact">Contact</MobileNavItem>
-        <Button width="100%"
-          p={8}
-          m={1}
-          color={useColorModeValue('gray.600', 'gray.200')}
-          _hover={{
-            textDecoration: 'none',
-            color: useColorModeValue('gray.800', 'white'),
-          }} onClick={handleSubscribe}>Subscribe</Button>
-        {showAlert && (
-          <Alert status="success">
-            <AlertIcon />
-            <Text>Thank you for subscribing! We are looking forward to <Text as='em'>occasionally</Text> haunting your inbox with new episodes!</Text>
-            <CloseButton onClick={() => setShowAlert(false)} />
-          </Alert>
-        )}
       </Stack>
     </Box>
   );

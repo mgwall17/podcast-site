@@ -3,7 +3,7 @@ import { Box, Image, Text, Badge,Center, Divider, } from '@chakra-ui/react';
 
 const MovieCard = ({ title, image, dateReleased, director, summary, comingSoon, premier_date, guest, publish_date, isPublished, iframe }) => {
   return (
-    <Box maxW="100%" borderWidth="1px" borderRadius="lg" overflow="hidden" boxShadow="lg" bgColor={"gray.700"}>
+    <Box maxW="100%" borderWidth="1px" borderRadius="lg" overflow="hidden" boxShadow="lg">
       <Box as="img" src={image} alt={title} width={'100%'}/>
       {comingSoon && (
           <Center>
@@ -28,7 +28,7 @@ const MovieCard = ({ title, image, dateReleased, director, summary, comingSoon, 
         <Text p={2}>{guest}</Text>
         <Divider my={2} />
         <Text p={2} as='b'>Movie Summary</Text>
-        <Text p={2} fontSize="md" color="gray.200">
+        <Text p={2} fontSize="md">
          Director: {director} <br/> Released: {dateReleased}
        </Text>
         <Text p={2} fontSize="md">
