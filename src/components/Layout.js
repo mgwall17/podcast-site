@@ -8,16 +8,18 @@ export default function Layout({ children }) {
       <Navigation />
       <Breadcrumbs />
       <Container maxW='4xl' p={2} centerContent>{children}</Container>
-      <Box mt="5" mb="2" as="footer">
+      <Container maxW='4xl' p={2} centerContent>
+      <Box mt="5" mb="2" as="footer" maxW="500px">
         <Text align="center">
           {"Copyright © "}
-          Mariah Wall {new Date().getFullYear()}
+          Jose Zaragoza {new Date().getFullYear()}
           {"."}
         </Text>
-        <Text align="center" fontSize='xs'>
-          Developed for educational purposes only.
+        <Text align="center" fontSize='xs' mt="1rem">
+        Content in this podcast and website may contain copyrighted material used under the principles of fair use for commentary and criticism.
         </Text>
       </Box>
+      </Container>
     </div>
   );
 }

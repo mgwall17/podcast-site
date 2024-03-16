@@ -11,11 +11,11 @@ export default function Contact() {
         <Box as="img" src="jose_glass.png" width={"250px"} />
         </Box>
         <Text my={4} fontSize={"lg"} align={'center'}>
-          Luckily it's not as complicated as performing a seance or a spell. Just click on the links below to reach me on SoundCloud, LinkedIn or email.
+          Luckily it's not as complicated as performing a seance or a spell. Just click on the links below to reach me on Spotify, LinkedIn or email.
         </Text>
         <Stack>
-          <Button as={Link} href="https://soundcloud.com/jose-zaragoza-480556966" isExternal colorScheme={"purple"}>SoundCloud</Button>
-          <Button as={Link} href="https://www.linkedin.com/in/jose-zaragoza-ii-a1b448186/" isExternal colorScheme={"purple"}>LinkedIn</Button>
+          <Button as={Link} href="https://open.spotify.com/show/2TTfdtQ83xCbaSlv1yVdTt?si=6f91be12bea64136" isExternal colorScheme={"green"}>Spotify</Button>
+          <Button as={Link} href="https://www.linkedin.com/in/jose-zaragoza-ii-a1b448186/" isExternal colorScheme={"blue"}>LinkedIn</Button>
           <Button as={Link} href="mailto:jzaragoza2@gmail.com" isExternal colorScheme={"purple"}>Email Me</Button>
         </Stack>
       <Box my={4}>
