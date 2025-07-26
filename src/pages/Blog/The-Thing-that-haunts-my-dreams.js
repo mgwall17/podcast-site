@@ -161,16 +161,16 @@ export default function TheThingthathauntsmydreams() {
                 <Box as="section" maxW="none" color={textColor}>
                   
               <Text mb={6} fontSize="lg" lineHeight="1.8" color={textColor}>Released in 1982, this cinematic masterpiece not only redefined the horror genre but also left an indelible mark on both cinema and popular culture.</Text>
-              <Heading as="h2" size="lg" mb={6} mt={10} color={headingColor} borderBottom="3px solid" borderColor={useColorModeValue("purple.200", "purple.600")} pb={3}>A Cinematic Revolution</Heading>
+              <Heading as="h2" size="lg" mb={6} mt={10} color={headingColor} borderBottom="3px solid" borderColor={borderColor} pb={3}>A Cinematic Revolution</Heading>
               <Text mb={6} fontSize="lg" lineHeight="1.8" color={textColor}>From the moment the ominous score by Ennio Morricone begins to play, "The Thing" sets a chilling tone that persists throughout its runtime. Carpenter's masterful direction, coupled with groundbreaking special effects by Rob Bottin, elevated the film to a level of visual and atmospheric horror previously unseen. The alien creature, with its grotesque transformations and unsettling mimicry, pushed the boundaries of practical effects and forever altered the landscape of creature features in cinema.</Text>
-              <Heading as="h2" size="lg" mb={6} mt={10} color={headingColor} borderBottom="3px solid" borderColor={useColorModeValue("purple.200", "purple.600")} pb={3}>Cultural Impact</Heading>
+              <Heading as="h2" size="lg" mb={6} mt={10} color={headingColor} borderBottom="3px solid" borderColor={borderColor} pb={3}>Cultural Impact</Heading>
               <Text mb={6} fontSize="lg" lineHeight="1.8" color={textColor}>"The Thing" wasn't just a film; it was a cultural phenomenon that resonated far beyond the confines of the movie theater. Its exploration of paranoia and distrust in an isolated Antarctic outpost mirrored the anxieties of the Cold War era. The film's stark portrayal of a group unraveling under the threat of an unseen enemy struck a chord, making it a timeless reflection of societal fears.</Text>
-              <Heading as="h2" size="lg" mb={6} mt={10} color={headingColor} borderBottom="3px solid" borderColor={useColorModeValue("purple.200", "purple.600")} pb={3}>Legacy in Horror Cinema</Heading>
+              <Heading as="h2" size="lg" mb={6} mt={10} color={headingColor} borderBottom="3px solid" borderColor={borderColor} pb={3}>Legacy in Horror Cinema</Heading>
               <Text mb={6} fontSize="lg" lineHeight="1.8" color={textColor}>Decades later, "The Thing" remains a touchstone for horror filmmakers. Its influence can be seen in subsequent works that explore the psychological horror of isolation and the visceral terror of shape-shifting entities. The film's emphasis on suspense, practical effects, and atmospheric tension has become a blueprint for horror directors seeking to elicit genuine fear from their audiences.</Text>
-              <Heading as="h2" size="lg" mb={6} mt={10} color={headingColor} borderBottom="3px solid" borderColor={useColorModeValue("purple.200", "purple.600")} pb={3}>Cult Following and Homages</Heading>
+              <Heading as="h2" size="lg" mb={6} mt={10} color={headingColor} borderBottom="3px solid" borderColor={borderColor} pb={3}>Cult Following and Homages</Heading>
               <Text mb={6} fontSize="lg" lineHeight="1.8" color={textColor}>"The Thing" has amassed a devoted cult following that celebrates its nuanced storytelling and groundbreaking effects. From video games to comic books, its legacy extends to various mediums. The film has been the subject of homage and reference in works across genres, showcasing its enduring impact on popular culture.</Text>
               <Text mb={6} fontSize="lg" lineHeight="1.8" color={textColor}>Most notably, the game Among Us that has our kids enraptured with mobile and PC gaming, is a direct homage to the film. The game's premise of a group of crewmates trying to identify an alien imposter is a direct reference to the film's plot. The game's popularity is a testament to the enduring legacy of "The Thing" and its ability to captivate audiences across generations.</Text>
-              <Heading as="h2" size="lg" mb={6} mt={10} color={headingColor} borderBottom="3px solid" borderColor={useColorModeValue("purple.200", "purple.600")} pb={3}>A Frozen Classic</Heading>
+              <Heading as="h2" size="lg" mb={6} mt={10} color={headingColor} borderBottom="3px solid" borderColor={borderColor} pb={3}>A Frozen Classic</Heading>
               <Text mb={6} fontSize="lg" lineHeight="1.8" color={textColor}>In reflecting on the impact of John Carpenter's "The Thing," it's evident that its influence goes beyond the horror genre. This frozen nightmare has left an indelible mark on cinema, inspiring filmmakers and captivating audiences with its visceral terror and psychological depth. As a horror enthusiast, I find myself returning to the frozen wastes of Antarctica, where the alien entity lurks, reshaping my understanding of fear and storytelling with each viewing. "The Thing" isn't just a film; it's a classic that continues to freeze the hearts of those willing to confront its chilling mysteries.</Text>
               
                 </Box>
@@ -186,7 +186,7 @@ export default function TheThingthathauntsmydreams() {
                 border="1px solid"
                 borderColor={borderColor}
                 borderLeft="6px solid"
-                borderLeftColor={useColorModeValue("purple.400", "purple.500")}
+                borderLeftColor="purple.500"
               >
                 <Heading as="h3" size="md" mb={4} color={headingColor}>
                   🎬 About the Movie
@@ -266,9 +266,9 @@ export default function TheThingthathauntsmydreams() {
                             borderRadius="lg"
                             borderColor={borderColor}
                             _hover={{ 
-                              bg: useColorModeValue("purple.50", "purple.900"), 
+                              bg: "purple.50", 
                               transform: "translateY(-2px)",
-                              borderColor: useColorModeValue("purple.300", "purple.400")
+                              borderColor: "purple.300"
                             }}
                             transition="all 0.2s"
                             cursor="pointer"
@@ -276,7 +276,7 @@ export default function TheThingthathauntsmydreams() {
                             <Heading as="h4" size="sm" mb={2} color={headingColor}>
                               {relatedPost.title}
                             </Heading>
-                            <Text fontSize="xs" color={useColorModeValue("gray.500", "gray.400")} mb={2}>
+                            <Text fontSize="xs" color="gray.500" mb={2}>
                               {relatedPost.publishDateFormatted} • {relatedPost.readTime}
                             </Text>
                             <Text fontSize="sm" noOfLines={2} color={textColor}>
@@ -299,12 +299,12 @@ export default function TheThingthathauntsmydreams() {
                     alignItems="center"
                     px={6}
                     py={3}
-                    bg={useColorModeValue("purple.600", "purple.500")}
+                    bg="purple.600"
                     color="white"
                     borderRadius="full"
                     fontWeight="semibold"
                     _hover={{ 
-                      bg: useColorModeValue("purple.700", "purple.600"),
+                      bg: "purple.700",
                       transform: "translateY(-2px)"
                     }}
                     transition="all 0.2s"

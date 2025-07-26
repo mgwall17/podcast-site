@@ -244,7 +244,7 @@ export default function Blog() {
                     size="lg" 
                     textAlign="center" 
                     mb={6}
-                    color="purple.600"
+                    color="purple.100"
                   >
                     Featured Posts
                   </Heading>

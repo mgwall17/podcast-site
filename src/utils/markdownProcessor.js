@@ -61,8 +61,8 @@ const markdownToJSX = (content) => {
   // Basic markdown to JSX conversion
   let jsxContent = content
     // Headers with better styling and dark mode support
-    .replace(/^### (.*$)/gm, '<Heading as="h3" size="md" mb={6} mt={8} color={headingColor} borderBottom="2px solid" borderColor={useColorModeValue("purple.100", "purple.700")} pb={2}>$1</Heading>')
-    .replace(/^## (.*$)/gm, '<Heading as="h2" size="lg" mb={6} mt={10} color={headingColor} borderBottom="3px solid" borderColor={useColorModeValue("purple.200", "purple.600")} pb={3}>$1</Heading>')
+    .replace(/^### (.*$)/gm, '<Heading as="h3" size="md" mb={6} mt={8} color={headingColor} borderBottom="2px solid" borderColor={borderColor} pb={2}>$1</Heading>')
+    .replace(/^## (.*$)/gm, '<Heading as="h2" size="lg" mb={6} mt={10} color={headingColor} borderBottom="3px solid" borderColor={borderColor} pb={3}>$1</Heading>')
     .replace(/^# (.*$)/gm, '<Heading as="h1" size="xl" mb={6} mt={8} color={headingColor} textAlign="center">$1</Heading>')
     
     // Paragraphs with better spacing and typography
@@ -72,10 +72,10 @@ const markdownToJSX = (content) => {
     .replace(/\*\*(.*?)\*\*/g, '<Text as="strong" color={headingColor} fontWeight="bold">$1</Text>')
     
     // Italic text
-    .replace(/\*(.*?)\*/g, '<Text as="em" fontStyle="italic" color={useColorModeValue("purple.600", "purple.400")}>$1</Text>')
+    .replace(/\*(.*?)\*/g, '<Text as="em" fontStyle="italic" color={headingColor}>$1</Text>')
     
     // Links with better styling
-    .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<Link href="$2" color={headingColor} fontWeight="semibold" textDecoration="underline" _hover={{ color: useColorModeValue("purple.800", "purple.200"), textDecoration: "none" }} isExternal>$1</Link>')
+    .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<Link href="$2" color={headingColor} fontWeight="semibold" textDecoration="underline" _hover={{ color: headingColor, textDecoration: "none" }} isExternal>$1</Link>')
     
     // Line breaks
     .replace(/\n\n/g, '\n')
@@ -287,7 +287,7 @@ export default function ${frontmatter.slug.replace(/-/g, '')}() {
                 border="1px solid"
                 borderColor={borderColor}
                 borderLeft="6px solid"
-                borderLeftColor={useColorModeValue("purple.400", "purple.500")}
+                borderLeftColor="purple.500"
               >
                 <Heading as="h3" size="md" mb={4} color={headingColor}>
                   🎬 About the Movie
@@ -367,9 +367,9 @@ export default function ${frontmatter.slug.replace(/-/g, '')}() {
                             borderRadius="lg"
                             borderColor={borderColor}
                             _hover={{ 
-                              bg: useColorModeValue("purple.50", "purple.900"), 
+                              bg: "purple.50", 
                               transform: "translateY(-2px)",
-                              borderColor: useColorModeValue("purple.300", "purple.400")
+                              borderColor: "purple.300"
                             }}
                             transition="all 0.2s"
                             cursor="pointer"
@@ -377,7 +377,7 @@ export default function ${frontmatter.slug.replace(/-/g, '')}() {
                             <Heading as="h4" size="sm" mb={2} color={headingColor}>
                               {relatedPost.title}
                             </Heading>
-                            <Text fontSize="xs" color={useColorModeValue("gray.500", "gray.400")} mb={2}>
+                            <Text fontSize="xs" color="gray.500" mb={2}>
                               {relatedPost.publishDateFormatted} • {relatedPost.readTime}
                             </Text>
                             <Text fontSize="sm" noOfLines={2} color={textColor}>
@@ -400,12 +400,12 @@ export default function ${frontmatter.slug.replace(/-/g, '')}() {
                     alignItems="center"
                     px={6}
                     py={3}
-                    bg={useColorModeValue("purple.600", "purple.500")}
+                    bg="purple.600"
                     color="white"
                     borderRadius="full"
                     fontWeight="semibold"
                     _hover={{ 
-                      bg: useColorModeValue("purple.700", "purple.600"),
+                      bg: "purple.700",
                       transform: "translateY(-2px)"
                     }}
                     transition="all 0.2s"

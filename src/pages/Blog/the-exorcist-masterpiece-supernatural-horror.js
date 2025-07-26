@@ -161,21 +161,21 @@ export default function theexorcistmasterpiecesupernaturalhorror() {
                 <Box as="section" maxW="none" color={textColor}>
                   
               <Heading as="h1" size="xl" mb={6} mt={8} color={headingColor} textAlign="center">The Power of Faith and Fear</Heading>
-              <Text mb={6} fontSize="lg" lineHeight="1.8" color={textColor}>When <Text as="em" fontStyle="italic" color={useColorModeValue("purple.600", "purple.400")}>The Exorcist</Text> premiered in 1973, it didn't just scare audiences—it fundamentally changed what horror cinema could achieve. William Friedkin's unflinching examination of faith, doubt, and the battle between good and evil created a template for supernatural horror that remains unmatched nearly five decades later.</Text>
-              <Heading as="h2" size="lg" mb={6} mt={10} color={headingColor} borderBottom="3px solid" borderColor={useColorModeValue("purple.200", "purple.600")} pb={3}>A Story That Transcends Horror</Heading>
-              <Text mb={6} fontSize="lg" lineHeight="1.8" color={textColor}>At its core, <Text as="em" fontStyle="italic" color={useColorModeValue("purple.600", "purple.400")}>The Exorcist</Text> is not merely a tale of demonic possession. It's a profound exploration of faith in crisis, the limits of medical science, and the eternal struggle between light and darkness. The film follows young Regan MacNeil, whose gradual transformation from innocent child to vessel of evil serves as a catalyst for examining the spiritual beliefs of everyone around her.</Text>
+              <Text mb={6} fontSize="lg" lineHeight="1.8" color={textColor}>When <Text as="em" fontStyle="italic" color={headingColor}>The Exorcist</Text> premiered in 1973, it didn't just scare audiences—it fundamentally changed what horror cinema could achieve. William Friedkin's unflinching examination of faith, doubt, and the battle between good and evil created a template for supernatural horror that remains unmatched nearly five decades later.</Text>
+              <Heading as="h2" size="lg" mb={6} mt={10} color={headingColor} borderBottom="3px solid" borderColor={borderColor} pb={3}>A Story That Transcends Horror</Heading>
+              <Text mb={6} fontSize="lg" lineHeight="1.8" color={textColor}>At its core, <Text as="em" fontStyle="italic" color={headingColor}>The Exorcist</Text> is not merely a tale of demonic possession. It's a profound exploration of faith in crisis, the limits of medical science, and the eternal struggle between light and darkness. The film follows young Regan MacNeil, whose gradual transformation from innocent child to vessel of evil serves as a catalyst for examining the spiritual beliefs of everyone around her.</Text>
               <Text mb={6} fontSize="lg" lineHeight="1.8" color={textColor}><Text as="strong" color={headingColor} fontWeight="bold">Chris MacNeil</Text>, Regan's mother, represents the modern secular worldview—rational, scientific, and initially dismissive of supernatural explanations. Her journey from skepticism to desperate faith mirrors the audience's own transformation throughout the film.</Text>
-              <Heading as="h2" size="lg" mb={6} mt={10} color={headingColor} borderBottom="3px solid" borderColor={useColorModeValue("purple.200", "purple.600")} pb={3}>The Brilliance of Practical Effects</Heading>
-              <Text mb={6} fontSize="lg" lineHeight="1.8" color={textColor}>What makes <Text as="em" fontStyle="italic" color={useColorModeValue("purple.600", "purple.400")}>The Exorcist</Text> enduringly terrifying is Friedkin's commitment to practical effects and psychological realism. The film's most shocking moments—Regan's head spinning 360 degrees, her projectile vomiting, the infamous spider-walk scene—were achieved through innovative practical techniques that feel viscerally real.</Text>
+              <Heading as="h2" size="lg" mb={6} mt={10} color={headingColor} borderBottom="3px solid" borderColor={borderColor} pb={3}>The Brilliance of Practical Effects</Heading>
+              <Text mb={6} fontSize="lg" lineHeight="1.8" color={textColor}>What makes <Text as="em" fontStyle="italic" color={headingColor}>The Exorcist</Text> enduringly terrifying is Friedkin's commitment to practical effects and psychological realism. The film's most shocking moments—Regan's head spinning 360 degrees, her projectile vomiting, the infamous spider-walk scene—were achieved through innovative practical techniques that feel viscerally real.</Text>
               <Text mb={6} fontSize="lg" lineHeight="1.8" color={textColor}>These effects serve the story rather than overwhelming it. Each supernatural manifestation escalates the psychological pressure on the characters, particularly Father Karras, whose crisis of faith becomes the emotional center of the film.</Text>
-              <Heading as="h2" size="lg" mb={6} mt={10} color={headingColor} borderBottom="3px solid" borderColor={useColorModeValue("purple.200", "purple.600")} pb={3}>Religious Horror Done Right</Heading>
-              <Text mb={6} fontSize="lg" lineHeight="1.8" color={textColor}><Text as="em" fontStyle="italic" color={useColorModeValue("purple.600", "purple.400")}>The Exorcist</Text> succeeds where many religious horror films fail because it takes faith seriously. The film doesn't mock religious belief or treat it as superstition. Instead, it presents a world where the supernatural is real, where evil exists as a tangible force, and where faith becomes the only weapon against darkness.</Text>
+              <Heading as="h2" size="lg" mb={6} mt={10} color={headingColor} borderBottom="3px solid" borderColor={borderColor} pb={3}>Religious Horror Done Right</Heading>
+              <Text mb={6} fontSize="lg" lineHeight="1.8" color={textColor}><Text as="em" fontStyle="italic" color={headingColor}>The Exorcist</Text> succeeds where many religious horror films fail because it takes faith seriously. The film doesn't mock religious belief or treat it as superstition. Instead, it presents a world where the supernatural is real, where evil exists as a tangible force, and where faith becomes the only weapon against darkness.</Text>
               <Text mb={6} fontSize="lg" lineHeight="1.8" color={textColor}><Text as="strong" color={headingColor} fontWeight="bold">Father Merrin</Text> and <Text as="strong" color={headingColor} fontWeight="bold">Father Karras</Text> represent two different approaches to faith—the experienced exorcist who has faced evil before, and the young priest struggling with doubt. Their dynamic creates the film's theological backbone.</Text>
-              <Heading as="h2" size="lg" mb={6} mt={10} color={headingColor} borderBottom="3px solid" borderColor={useColorModeValue("purple.200", "purple.600")} pb={3}>Cultural Impact and Legacy</Heading>
-              <Text mb={6} fontSize="lg" lineHeight="1.8" color={textColor}>The film's impact extended far beyond the horror genre. <Text as="em" fontStyle="italic" color={useColorModeValue("purple.600", "purple.400")}>The Exorcist</Text> sparked nationwide conversations about faith, evil, and the supernatural. Reports of audience members fainting, vomiting, and fleeing theaters became part of the film's legend.</Text>
-              <Text mb={6} fontSize="lg" lineHeight="1.8" color={textColor}>More importantly, it elevated horror cinema to new artistic heights, proving that the genre could tackle serious themes while delivering genuine scares. The film's influence can be seen in countless supernatural horror films that followed, from <Text as="em" fontStyle="italic" color={useColorModeValue("purple.600", "purple.400")}>The Conjuring</Text> to <Text as="em" fontStyle="italic" color={useColorModeValue("purple.600", "purple.400")}>Hereditary</Text>.</Text>
-              <Heading as="h2" size="lg" mb={6} mt={10} color={headingColor} borderBottom="3px solid" borderColor={useColorModeValue("purple.200", "purple.600")} pb={3}>A Timeless Terror</Heading>
-              <Text mb={6} fontSize="lg" lineHeight="1.8" color={textColor}>Nearly fifty years later, <Text as="em" fontStyle="italic" color={useColorModeValue("purple.600", "purple.400")}>The Exorcist</Text> remains as powerful as ever. Its slow-burn approach to horror, emphasis on character development, and unflinching examination of faith create a viewing experience that lingers long after the credits roll.</Text>
+              <Heading as="h2" size="lg" mb={6} mt={10} color={headingColor} borderBottom="3px solid" borderColor={borderColor} pb={3}>Cultural Impact and Legacy</Heading>
+              <Text mb={6} fontSize="lg" lineHeight="1.8" color={textColor}>The film's impact extended far beyond the horror genre. <Text as="em" fontStyle="italic" color={headingColor}>The Exorcist</Text> sparked nationwide conversations about faith, evil, and the supernatural. Reports of audience members fainting, vomiting, and fleeing theaters became part of the film's legend.</Text>
+              <Text mb={6} fontSize="lg" lineHeight="1.8" color={textColor}>More importantly, it elevated horror cinema to new artistic heights, proving that the genre could tackle serious themes while delivering genuine scares. The film's influence can be seen in countless supernatural horror films that followed, from <Text as="em" fontStyle="italic" color={headingColor}>The Conjuring</Text> to <Text as="em" fontStyle="italic" color={headingColor}>Hereditary</Text>.</Text>
+              <Heading as="h2" size="lg" mb={6} mt={10} color={headingColor} borderBottom="3px solid" borderColor={borderColor} pb={3}>A Timeless Terror</Heading>
+              <Text mb={6} fontSize="lg" lineHeight="1.8" color={textColor}>Nearly fifty years later, <Text as="em" fontStyle="italic" color={headingColor}>The Exorcist</Text> remains as powerful as ever. Its slow-burn approach to horror, emphasis on character development, and unflinching examination of faith create a viewing experience that lingers long after the credits roll.</Text>
               <Text mb={6} fontSize="lg" lineHeight="1.8" color={textColor}>The film reminds us that the most effective horror comes not from jump scares or gore, but from confronting our deepest fears about the nature of good and evil, faith and doubt, and the fragility of innocence in a world where darkness is always waiting.</Text>
               
                 </Box>
@@ -191,7 +191,7 @@ export default function theexorcistmasterpiecesupernaturalhorror() {
                 border="1px solid"
                 borderColor={borderColor}
                 borderLeft="6px solid"
-                borderLeftColor={useColorModeValue("purple.400", "purple.500")}
+                borderLeftColor="purple.500"
               >
                 <Heading as="h3" size="md" mb={4} color={headingColor}>
                   🎬 About the Movie
@@ -271,9 +271,9 @@ export default function theexorcistmasterpiecesupernaturalhorror() {
                             borderRadius="lg"
                             borderColor={borderColor}
                             _hover={{ 
-                              bg: useColorModeValue("purple.50", "purple.900"), 
+                              bg: "purple.50", 
                               transform: "translateY(-2px)",
-                              borderColor: useColorModeValue("purple.300", "purple.400")
+                              borderColor: "purple.300"
                             }}
                             transition="all 0.2s"
                             cursor="pointer"
@@ -281,7 +281,7 @@ export default function theexorcistmasterpiecesupernaturalhorror() {
                             <Heading as="h4" size="sm" mb={2} color={headingColor}>
                               {relatedPost.title}
                             </Heading>
-                            <Text fontSize="xs" color={useColorModeValue("gray.500", "gray.400")} mb={2}>
+                            <Text fontSize="xs" color="gray.500" mb={2}>
                               {relatedPost.publishDateFormatted} • {relatedPost.readTime}
                             </Text>
                             <Text fontSize="sm" noOfLines={2} color={textColor}>
@@ -304,12 +304,12 @@ export default function theexorcistmasterpiecesupernaturalhorror() {
                     alignItems="center"
                     px={6}
                     py={3}
-                    bg={useColorModeValue("purple.600", "purple.500")}
+                    bg="purple.600"
                     color="white"
                     borderRadius="full"
                     fontWeight="semibold"
                     _hover={{ 
-                      bg: useColorModeValue("purple.700", "purple.600"),
+                      bg: "purple.700",
                       transform: "translateY(-2px)"
                     }}
                     transition="all 0.2s"
