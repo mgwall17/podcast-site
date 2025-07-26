@@ -1,77 +1,191 @@
 "use client";
-import { Link } from "@chakra-ui/next-js";
-import { Container, Heading, Stack, Text, Box } from "@chakra-ui/react";
+import { useState, useMemo } from "react";
+import { Container, Heading, Stack, Text, Box, VStack, SimpleGrid } from "@chakra-ui/react";
 import MovieCard from "../components/MovieCard";
+import SearchAndFilter from "../components/SearchAndFilter";
+import SEO from "../components/SEO";
+import { episodesData, sortEpisodes, filterEpisodes, getAllGenres, getEpisodeStructuredData } from "../utils/episodeData";
+
 export default function Episodes() {
+  const [searchTerm, setSearchTerm] = useState("");
+  const [sortBy, setSortBy] = useState("date");
+  const [sortOrder, setSortOrder] = useState("desc");
+  const [filters, setFilters] = useState({
+    status: "all",
+    genre: "all"
+  });
+  const [expandedCard, setExpandedCard] = useState(null);
+
+  const genres = getAllGenres();
+
+  const filteredAndSortedEpisodes = useMemo(() => {
+    let filtered = filterEpisodes(episodesData, { ...filters, search: searchTerm });
+    return sortEpisodes(filtered, sortBy, sortOrder);
+  }, [searchTerm, sortBy, sortOrder, filters]);
+
+  const liveEpisodes = filteredAndSortedEpisodes.filter(ep => ep.isPublished);
+  const upcomingEpisodes = filteredAndSortedEpisodes.filter(ep => !ep.isPublished);
+
+  const handleFilterChange = (key, value) => {
+    setFilters(prev => ({ ...prev, [key]: value }));
+  };
+
+  const handleClearFilters = () => {
+    setSearchTerm("");
+    setFilters({ status: "all", genre: "all" });
+    setSortBy("date");
+    setSortOrder("desc");
+  };
+
+  const handleCardToggle = (episodeId) => {
+    setExpandedCard(expandedCard === episodeId ? null : episodeId);
+  };
+
+  const episodesStructuredData = {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "Horror Glass Podcast Episodes",
+    "description": "Browse all episodes of Horror Glass Podcast, featuring in-depth discussions about horror films and their psychological impact.",
+    "url": "https://horrorglassPodcast.com/episodes",
+    "mainEntity": {
+      "@type": "ItemList",
+      "itemListElement": filteredAndSortedEpisodes.map((episode, index) => ({
+        "@type": "ListItem",
+        "position": index + 1,
+        "item": getEpisodeStructuredData(episode)
+      }))
+    }
+  };
+
   return (
-    <Container>
-        <Heading as="h1" size="xl" align={'center'} mb={4}>Episodes</Heading>
-        <Stack spacing={8}>
-          <Box>
-          <MovieCard
-          title="Episode 1: Psycho"
-          image="psycho.jpg"
-          dateReleased="1982"
-          director="Alfred Hitchcock"
-          summary="A secretary embezzles money and checks into a secluded motel run by the mysterious Norman Bates. The narrative takes a shocking turn with the infamous shower scene, leading to a psychological thriller that explores the depths of madness and the unsettling consequences of fractured identities."
-          comingSoon={false}
-          isPublished={true}
-          publish_date={"March 10, 2024"}
-          guest={"Steven delights us with little known facts and music score commentary and discusses the cultural impact this unique plot has on future cinema."}
-          iframe={<iframe
-          src="https://open.spotify.com/embed/show/2TTfdtQ83xCbaSlv1yVdTt?utm_source=generator" width="100%" height="152" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>}
-        />
+    <>
+      <SEO
+        title="Episodes - Horror Glass Podcast"
+        description="Browse all episodes of Horror Glass Podcast. Join Jose Zaragoza as he explores the psychological impact of horror films with diverse guests, from classic thrillers to modern scares."
+        keywords="horror podcast episodes, horror movie discussions, psychological horror, film analysis, podcast archive"
+        structuredData={episodesStructuredData}
+        canonical="https://horrorglassPodcast.com/episodes"
+      />
+      
+      <Container maxW="6xl" as="main">
+        <VStack spacing={6} align="stretch">
+          <Box textAlign="center">
+            <Heading as="h1" size="xl" mb={4}>
+              Horror Glass Podcast Episodes
+            </Heading>
+            <Text fontSize="lg" color="gray.400" maxW="2xl" mx="auto">
+              Explore our collection of horror film discussions, featuring psychological insights, 
+              guest perspectives, and deep dives into the movies that haunt our dreams.
+            </Text>
           </Box>
-        <Heading align={"center"} as="h2" size="lg">Upcoming Episodes</Heading>
-          <Box>
-          <MovieCard
-          title="Episode 2: The Thing"
-          image="Thing.jpg"
-          dateReleased="1982"
-          director="John Carpenter"
-          summary="A group of researchers in Antarctica discover an extraterrestrial organism that assimilates and imitates other life forms, creating an atmosphere of paranoia and fear as they struggle to determine who among them has been taken over by the shape-shifting entity. As trust erodes and survival becomes uncertain, the film unfolds as a suspenseful and chilling exploration of isolation and the terrifying unknown."
-          comingSoon={true}
-          premier_date={"April 2024"}
-          guest={"George reveals how this movie changed his life, how incredible the effects stand the test of time and discusses one the most ambiguous endings in horror history."}
-        />
-          </Box>
-        <Box>
-          <MovieCard
-          title="Episode 3: Hellraiser"
-          image="Hellraiser.jpg"
-          dateReleased="1987"
-          director="Clive Barker"
-          summary="A man unlocks a mysterious puzzle box, inadvertently summoning sadomasochistic creatures known as Cenobites. As the boundaries between pleasure and pain blur, he becomes entangled in a nightmarish dimension, confronting his own desires and the macabre consequences of meddling with forbidden forces."
-          comingSoon={true}
-          premier_date={"June 2024"}
-          guest={"Mariah tells us about how Hellraiser awed her with practical effects, introduced her to body horror, and how it explores the limits of pleasure and pain with its characters."}
-        />
-          </Box>
-          {/* <Box>
-          <MovieCard
-          title="Episode 4: Halloween"
-          image="Halloween.jpeg"
-          dateReleased="1978"
-          director="John Carpenter"
-          summary="A masked killer named Michael Myers escapes from a mental institution and returns to his hometown on Halloween night. As he terrorizes babysitter Laurie Strode, the film unfolds as a suspenseful and iconic slasher, setting the standard for the genre and introducing audiences to the haunting figure of Michael Myers."
-          comingSoon={true}
-          premier_date={"February 2024"}
-          guest={"Mario discusses this masterclass of Slasher and how Michael Myers continues to stalk his mind to this day."}
-        />
-          </Box>
-          <Box>
-          <MovieCard
-          title="Episode 5: The Autopsy of Jane Doe"
-          image="JaneDoe.jpg"
-          dateReleased="2016"
-          director="André Øvredal"
-          summary="A father-son coroner duo receives an unidentified female corpse for examination. As they delve into the autopsy, they uncover increasingly disturbing and supernatural secrets, leading to a night of terror within the confines of their mortuary."
-          comingSoon={true}
-          premier_date={"May 2024"}
-          guest={"Susan and Mike discuss with me how surprising this movie was for them and the unique set-up and excellent use of mystery they observed in this film."}
-        />
-          </Box> */}
-        </Stack>
-    </Container>
+
+          <SearchAndFilter
+            searchTerm={searchTerm}
+            onSearchChange={setSearchTerm}
+            sortBy={sortBy}
+            onSortChange={setSortBy}
+            sortOrder={sortOrder}
+            onSortOrderChange={setSortOrder}
+            filters={filters}
+            onFilterChange={handleFilterChange}
+            filterOptions={{ genres }}
+            resultCount={filteredAndSortedEpisodes.length}
+            onClearFilters={handleClearFilters}
+            type="episodes"
+          />
+
+          {filteredAndSortedEpisodes.length === 0 ? (
+            <Box textAlign="center" py={8}>
+              <Text fontSize="lg" color="gray.500">
+                No episodes found matching your criteria.
+              </Text>
+              <Text fontSize="md" color="gray.400" mt={2}>
+                Try adjusting your search terms or filters.
+              </Text>
+            </Box>
+          ) : (
+            <Stack spacing={8}>
+              {/* Live Episodes */}
+              {liveEpisodes.length > 0 && (
+                <Box as="section" aria-labelledby="live-episodes">
+                  <Heading 
+                    id="live-episodes"
+                    as="h2" 
+                    size="lg" 
+                    textAlign="center" 
+                    mb={6}
+                    color="purple.600"
+                  >
+                    Live Episodes ({liveEpisodes.length})
+                  </Heading>
+                  <SimpleGrid columns={{ base: 1, md: 2 }} spacing={6}>
+                    {liveEpisodes.map((episode) => (
+                      <MovieCard
+                        key={episode.id}
+                        title={episode.title}
+                        image={episode.image}
+                        dateReleased={episode.movieYear}
+                        director={episode.director}
+                        summary={episode.summary}
+                        comingSoon={false}
+                        isPublished={episode.isPublished}
+                        publish_date={episode.publishDateFormatted}
+                        guest={episode.guest}
+                        iframe={episode.spotifyEmbed}
+                        genres={episode.genres}
+                        scareLevel={episode.scareLevel}
+                        triggerWarnings={episode.triggerWarnings}
+                        duration={episode.duration}
+                        episodeNumber={episode.episodeNumber}
+                        isExpanded={expandedCard === episode.id}
+                        onToggle={() => handleCardToggle(episode.id)}
+                      />
+                    ))}
+                  </SimpleGrid>
+                </Box>
+              )}
+
+              {/* Upcoming Episodes */}
+              {upcomingEpisodes.length > 0 && (
+                <Box as="section" aria-labelledby="upcoming-episodes">
+                  <Heading 
+                    id="upcoming-episodes"
+                    as="h2" 
+                    size="lg" 
+                    textAlign="center" 
+                    mb={6}
+                    color="purple.400"
+                  >
+                    Upcoming Episodes ({upcomingEpisodes.length})
+                  </Heading>
+                  <SimpleGrid columns={{ base: 1, md: 1, lg:2 }} spacing={6}>
+                    {upcomingEpisodes.map((episode) => (
+                      <MovieCard
+                        key={episode.id}
+                        title={episode.title}
+                        image={episode.image}
+                        dateReleased={episode.movieYear}
+                        director={episode.director}
+                        summary={episode.summary}
+                        comingSoon={true}
+                        premier_date={episode.publishDateFormatted}
+                        guest={episode.guest}
+                        genres={episode.genres}
+                        scareLevel={episode.scareLevel}
+                        triggerWarnings={episode.triggerWarnings}
+                        duration={episode.duration}
+                        episodeNumber={episode.episodeNumber}
+                        isExpanded={expandedCard === episode.id}
+                        onToggle={() => handleCardToggle(episode.id)}
+                      />
+                    ))}
+                  </SimpleGrid>
+                </Box>
+              )}
+            </Stack>
+          )}
+        </VStack>
+      </Container>
+    </>
   );
 }

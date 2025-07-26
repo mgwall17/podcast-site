@@ -59,9 +59,9 @@ const Navigation = () => {
           <Button colorScheme={"purple"} display={{ base: 'none', md: 'inline-flex' }} as={Link} href="/Episodes" fontSize={'sm'} fontWeight={400}>
             Episodes
           </Button>
-          {/* <Button colorScheme={"purple"} display={{ base: 'none', md: 'inline-flex' }} as={Link} href="/Blog" fontSize={'sm'} fontWeight={400}>
+          <Button colorScheme={"purple"} display={{ base: 'none', md: 'inline-flex' }} as={Link} href="/Blog" fontSize={'sm'} fontWeight={400}>
             Blog
-          </Button> */}
+          </Button>
           <Button colorScheme={"purple"} display={{ base: 'none', md: 'inline-flex' }} as={Link} href="/About" fontSize={'sm'} fontWeight={400}>
             About
           </Button>
@@ -90,7 +90,7 @@ const MobileNav = ({ isOpen, onToggle, showAlert, setShowAlert }) => {
     <Box onClick={handleClose}>
       <Stack bg={useColorModeValue('white', 'gray.800')} p={4} display={{ md: 'none' }}>
         <MobileNavItem href="/Episodes">Episodes</MobileNavItem>
-        {/* <MobileNavItem href="/Blog">Blog</MobileNavItem> */}
+        <MobileNavItem href="/Blog">Blog</MobileNavItem>
         <MobileNavItem href="/About">About</MobileNavItem>
         <MobileNavItem href="/Contact">Contact</MobileNavItem>
       </Stack>
