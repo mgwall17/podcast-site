@@ -120,7 +120,7 @@ import NextLink from "next/link";
 import SEO from "../../components/SEO";
 import { blogPostsData, getBlogPostStructuredData, getRelatedPosts } from "../../utils/blogData";
 
-export default function ${frontmatter.slug.replace(/-/g, '')}() {
+export default function ${frontmatter.slug.replace(/-/g, '').replace(/^./, str => str.toUpperCase())}() {
   const post = blogPostsData.find(p => p.slug === "${frontmatter.slug}");
   const relatedPosts = getRelatedPosts(post, 2);
 

@@ -6,7 +6,7 @@ import NextLink from "next/link";
 import SEO from "../../components/SEO";
 import { blogPostsData, getBlogPostStructuredData, getRelatedPosts } from "../../utils/blogData";
 
-export default function theexorcistmasterpiecesupernaturalhorror() {
+export default function Theexorcistmasterpiecesupernaturalhorror() {
   const post = blogPostsData.find(p => p.slug === "the-exorcist-masterpiece-supernatural-horror");
   const relatedPosts = getRelatedPosts(post, 2);
 
