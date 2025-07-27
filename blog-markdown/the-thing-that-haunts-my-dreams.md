@@ -4,7 +4,7 @@ slug: "The-Thing-that-haunts-my-dreams"
 excerpt: "John Carpenter's masterpiece of paranoia and body horror continues to terrify audiences decades after its release, proving that some nightmares never fade."
 author: "Jose Zaragoza"
 publishDate: "2023-10-12"
-image: "https://via.placeholder.com/1200x600/8B5CF6/FFFFFF?text=The+Thing+(1982)"
+image: "/Thing.jpg"
 tags: ["The Thing", "John Carpenter", "Body Horror", "Sci-Fi Horror", "Practical Effects"]
 categories: ["Movie Reviews", "Horror Analysis", "Director Spotlight"]
 featured: true

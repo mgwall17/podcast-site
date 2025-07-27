@@ -55,7 +55,7 @@ export default function About() {
         <VStack spacing={8} align="stretch">
           {/* Header */}
           <Box textAlign="center">
-            <Heading as="h1" size="2xl" mb={6} color="purple.600">
+            <Heading as="h1" size="2xl" mb={6}>
               About Jose Zaragoza
             </Heading>
             <Text fontSize="xl" color="gray.600" maxW="2xl" mx="auto">
@@ -94,7 +94,7 @@ export default function About() {
 
           {/* Bio Section */}
           <Box as="section" aria-labelledby="bio-section">
-            <Heading id="bio-section" as="h2" size="lg" mb={4} color="purple.600" textAlign="center">
+            <Heading id="bio-section" as="h2" size="lg" mb={4} textAlign="center">
               My Story
             </Heading>
             <VStack spacing={4} align="stretch">
@@ -117,12 +117,12 @@ export default function About() {
 
           {/* Education & Expertise */}
           <Box as="section" aria-labelledby="expertise-section">
-            <Heading id="expertise-section" as="h2" size="lg" mb={4} color="purple.600" textAlign="center">
+            <Heading id="expertise-section" as="h2" size="lg" mb={4} textAlign="center">
               Background & Expertise
             </Heading>
             <SimpleGrid columns={[1, 2]} spacing={6}>
-              <Box p={6} bg="purple.50" borderRadius="lg">
-                <Heading as="h3" size="md" mb={3} color="purple.700">
+              <Box p={6} bg="purple.900" borderRadius="lg">
+                <Heading as="h3" size="md" mb={3}>
                   Education
                 </Heading>
                 <Text>
@@ -131,8 +131,8 @@ export default function About() {
                 </Text>
               </Box>
               
-              <Box p={6} bg="purple.50" borderRadius="lg">
-                <Heading as="h3" size="md" mb={3} color="purple.700">
+              <Box p={6} bg="purple.900" borderRadius="lg">
+                <Heading as="h3" size="md" mb={3}>
                   Specialties
                 </Heading>
                 <VStack align="start" spacing={1}>
@@ -148,13 +148,13 @@ export default function About() {
           {/* Connect Section */}
           <Box 
             as="section" 
-            bg="gray.50" 
+            bg="gray.900" 
             p={8} 
             borderRadius="lg"
             textAlign="center"
             aria-labelledby="connect-section"
           >
-            <Heading id="connect-section" as="h2" size="lg" mb={4} color="purple.600">
+            <Heading id="connect-section" as="h2" size="lg" mb={4} >
               Let's Connect
             </Heading>
             <Text fontSize="lg" mb={6} lineHeight="tall">
@@ -194,10 +194,10 @@ export default function About() {
 
           {/* Thank You Section */}
           <Box textAlign="center" py={6}>
-            <Text fontSize="xl" fontWeight="semibold" color="purple.600" mb={2}>
+            <Text fontSize="xl" fontWeight="semibold" mb={2}>
               Thank you for being a part of the Horror Glass journey!
             </Text>
-            <Text fontSize="lg" color="gray.600">
+            <Text fontSize="lg" color="gray.100">
               Your support means everything as we explore the fascinating world of horror cinema together.
             </Text>
           </Box>

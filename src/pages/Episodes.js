@@ -9,7 +9,7 @@ import { episodesData, sortEpisodes, filterEpisodes, getAllGenres, getEpisodeStr
 export default function Episodes() {
   const [searchTerm, setSearchTerm] = useState("");
   const [sortBy, setSortBy] = useState("date");
-  const [sortOrder, setSortOrder] = useState("desc");
+  const [sortOrder, setSortOrder] = useState("asc");
   const [filters, setFilters] = useState({
     status: "all",
     genre: "all"
@@ -34,7 +34,7 @@ export default function Episodes() {
     setSearchTerm("");
     setFilters({ status: "all", genre: "all" });
     setSortBy("date");
-    setSortOrder("desc");
+    setSortOrder("asc");
   };
 
   const handleCardToggle = (episodeId) => {
@@ -114,7 +114,6 @@ export default function Episodes() {
                     size="lg" 
                     textAlign="center" 
                     mb={6}
-                    color="purple.600"
                   >
                     Live Episodes ({liveEpisodes.length})
                   </Heading>
@@ -154,7 +153,6 @@ export default function Episodes() {
                     size="lg" 
                     textAlign="center" 
                     mb={6}
-                    color="purple.400"
                   >
                     Upcoming Episodes ({upcomingEpisodes.length})
                   </Heading>

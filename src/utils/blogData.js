@@ -9,7 +9,7 @@ export const blogPostsData = [
     "publishDate": "2023-09-03",
     "publishDateFormatted": "September 2nd, 2023",
     "modifiedDate": "2023-09-03",
-    "image": "https://via.placeholder.com/1200x600/6B46C1/FFFFFF?text=Psycho+(1960)",
+    "image": "/psycho.jpg",
     "tags": [
       "Psycho",
       "Alfred Hitchcock",
@@ -40,7 +40,7 @@ export const blogPostsData = [
     "publishDate": "2023-10-12",
     "publishDateFormatted": "October 11st, 2023",
     "modifiedDate": "2023-10-12",
-    "image": "https://via.placeholder.com/1200x600/8B5CF6/FFFFFF?text=The+Thing+(1982)",
+    "image": "/Thing.jpg",
     "tags": [
       "The Thing",
       "John Carpenter",
@@ -72,7 +72,7 @@ export const blogPostsData = [
     "publishDate": "2023-11-11",
     "publishDateFormatted": "November 10st, 2023",
     "modifiedDate": "2023-11-11",
-    "image": "https://via.placeholder.com/1200x600/A855F7/FFFFFF?text=Hellraiser+(1987)",
+    "image": "/hellraiser.jpg",
     "tags": [
       "Hellraiser",
       "Clive Barker",

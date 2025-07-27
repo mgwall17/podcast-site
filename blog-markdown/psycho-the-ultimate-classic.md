@@ -4,7 +4,7 @@ slug: "Psycho-the-ultimate-classic"
 excerpt: "From its spine-tingling shower scene to the ominous Bates Motel, this cinematic gem has become a timeless emblem of terror, captivating audiences across generations."
 author: "Jose Zaragoza"
 publishDate: "2023-09-03"
-image: "https://via.placeholder.com/1200x600/6B46C1/FFFFFF?text=Psycho+(1960)"
+image: "/psycho.jpg"
 tags: ["Psycho", "Alfred Hitchcock", "Classic Horror", "Psychological Horror", "Film Analysis"]
 categories: ["Movie Reviews", "Horror Analysis"]
 featured: true

@@ -49,21 +49,27 @@ const MovieCard = ({
       _hover={{ boxShadow: "xl", transform: "translateY(-2px)" }}
       transition="all 0.2s"
     >
-      {/* Collapsed State - Horizontal Layout */}
-      <Flex direction="row" align="stretch" minHeight={isExpanded ? "auto" : "400px"}minWidth="auto">
-        {/* Image Section - Full Height */}
+      {/* Collapsed State - Responsive Layout */}
+      <Flex 
+        direction={{ base: "column", md: "row" }} 
+        align="stretch" 
+        minHeight={{ base: "auto", md: isExpanded ? "auto" : "400px" }}
+        minWidth="auto"
+      >
+        {/* Image Section - Responsive */}
         <Box 
           flexShrink={0}
-          width="200px"
+          width={{ base: "100%", md: "200px" }}
+          height={{ base: "300px", md: "100%" }}
           overflow="hidden"
         >
           <Box 
             as="img" 
             src={image} 
             alt={`Movie poster for ${title.replace(/Episode \d+: /, '')}`}
-            width="200px"
-            minHeight="400px"
+            width="100%"
             height="100%"
+            minHeight={{ base: "300px", md: "400px" }}
             objectFit="cover"
             loading="lazy"
           />
@@ -155,7 +161,24 @@ const MovieCard = ({
 
               {/* Spotify Embed - Collapsed (for published episodes) */}
               {isPublished && iframe && (
-                <Box width="100%" mt={3} role="region" aria-label="Podcast episode player">
+                <Box 
+                  width="100%" 
+                  mt={3} 
+                  mb={2}
+                  role="region" 
+                  aria-label="Podcast episode player"
+                  overflow="visible"
+                  minHeight="152px"
+                  sx={{
+                    '& iframe': {
+                      width: '100%',
+                      height: '152px',
+                      border: 'none',
+                      borderRadius: '12px',
+                      overflow: 'hidden'
+                    }
+                  }}
+                >
                   <div dangerouslySetInnerHTML={{ __html: iframe }} />
                 </Box>
               )}

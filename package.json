@@ -7,7 +7,9 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "generate-blog": "node scripts/generateBlogFromMarkdown.js"
+    "generate-blog": "node scripts/generateBlogFromMarkdown.js",
+    "convert-episodes": "node scripts/convertJsonToMarkdown.js",
+    "add-episode": "node scripts/addNewEpisode.js"
   },
   "dependencies": {
     "@chakra-ui/icons": "^2.1.1",

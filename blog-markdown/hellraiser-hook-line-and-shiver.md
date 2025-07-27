@@ -4,7 +4,7 @@ slug: "Hellraiser-Hook-line-and-shiver"
 excerpt: "Clive Barker's visceral exploration of pleasure and pain redefined body horror, introducing audiences to the unforgettable Cenobites and their twisted dimension."
 author: "Jose Zaragoza"
 publishDate: "2023-11-11"
-image: "https://via.placeholder.com/1200x600/A855F7/FFFFFF?text=Hellraiser+(1987)"
+image: "/hellraiser.jpg"
 tags: ["Hellraiser", "Clive Barker", "Body Horror", "Cenobites", "Gothic Horror"]
 categories: ["Movie Reviews", "Horror Analysis", "Body Horror"]
 featured: false
