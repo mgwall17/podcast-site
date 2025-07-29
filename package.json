@@ -8,8 +8,10 @@
     "start": "next start",
     "lint": "next lint",
     "generate-blog": "node scripts/generateBlogFromMarkdown.js",
+    "generate-episodes": "node scripts/generateEpisodesFromMarkdown.js",
     "convert-episodes": "node scripts/convertJsonToMarkdown.js",
-    "add-episode": "node scripts/addNewEpisode.js"
+    "add-episode": "node scripts/addNewEpisode.js",
+    "update-content": "npm run generate-blog && npm run generate-episodes"
   },
   "dependencies": {
     "@chakra-ui/icons": "^2.1.1",

@@ -66,7 +66,7 @@ const MovieCard = ({
           <Box 
             as="img" 
             src={image} 
-            alt={`Movie poster for ${title.replace(/Episode \d+: /, '')}`}
+            alt={`Movie poster for ${title ? title.replace(/Episode \d+: /, '') : 'Unknown Episode'}`}
             width="100%"
             height="100%"
             minHeight={{ base: "300px", md: "400px" }}

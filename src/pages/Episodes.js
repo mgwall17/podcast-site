@@ -16,7 +16,7 @@ export default function Episodes() {
   });
   const [expandedCard, setExpandedCard] = useState(null);
 
-  const genres = getAllGenres();
+  const genres = getAllGenres(episodesData);
 
   const filteredAndSortedEpisodes = useMemo(() => {
     let filtered = filterEpisodes(episodesData, { ...filters, search: searchTerm });

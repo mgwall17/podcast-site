@@ -1,6 +1,6 @@
 ---
 # Episode Information
-title: "The Thing"
+title: "The Thing Part 2"
 slug: "the-thing"
 isPublished: true
 publishDate: "2025-04-15"
@@ -8,7 +8,7 @@ publishDateFormatted: "April 2025"
 duration: "50 minutes"
 
 # Movie Information
-movieTitle: "The Thing"
+movieTitle: "The Thing Part 2"
 movieYear: "1982"
 director: "John Carpenter"
 image: "/Thing.jpg"
@@ -17,8 +17,8 @@ scareLevel: 5
 triggerWarnings: ["Body Horror","Gore","Paranoia"]
 
 # Podcast Content
-guest: "George reveals how this movie changed his life, how incredible the effects stand the test of time and discusses one the most ambiguous endings in horror history."
-spotifyEmbed: '<iframe style="border-radius:12px" src="https://open.spotify.com/embed/episode/6KzCC6Bru6d9jUsmFpM9Iq?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>'
+guest: "George continues the conversation in Part 2"
+spotifyEmbed: '<iframe style="border-radius:12px" src="https://open.spotify.com/embed/episode/1iTAtpec5HODMboWwOn7Kz?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>'
 ---
 # Movie Summary
 
@@ -26,7 +26,7 @@ A group of researchers in Antarctica discover an extraterrestrial organism that 
 
 ## Additional Notes
 
-This episode features insights about The Thing (1982) directed by John Carpenter. 
+This episode features insights about The Thing Part 2 (1982) directed by John Carpenter. 
 
 ### Episode Details
 - **Scare Level**: 5/5
@@ -35,4 +35,4 @@ This episode features insights about The Thing (1982) directed by John Carpenter
 - **Content Warnings**: Body Horror, Gore, Paranoia
 
 ### Guest Commentary
-George reveals how this movie changed his life, how incredible the effects stand the test of time and discusses one the most ambiguous endings in horror history.
+George continues the conversation in Part 2

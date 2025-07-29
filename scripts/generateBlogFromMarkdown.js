@@ -179,6 +179,26 @@ export const getRelatedPosts = (currentPost, limit = 3) => {
   fs.writeFileSync(BLOG_DATA_FILE, blogDataTemplate);
 }
 
+// Function to clean up deleted files
+function cleanupDeletedFiles(currentSlugs, existingPosts) {
+  let deletedCount = 0;
+  
+  // Find posts that no longer have corresponding markdown files
+  const postsToDelete = existingPosts.filter(post => !currentSlugs.includes(post.slug));
+  
+  // Delete corresponding React components
+  postsToDelete.forEach(post => {
+    const componentPath = path.join(BLOG_PAGES_DIR, `${post.slug}.js`);
+    if (fs.existsSync(componentPath)) {
+      fs.unlinkSync(componentPath);
+      console.log(`🗑️  Deleted component: ${post.slug}.js`);
+      deletedCount++;
+    }
+  });
+  
+  return { deletedCount, deletedSlugs: postsToDelete.map(p => p.slug) };
+}
+
 // Main function to process markdown files
 function processMarkdownFiles() {
   console.log('🚀 Starting blog generation from markdown files...');
@@ -194,11 +214,8 @@ function processMarkdownFiles() {
   
   console.log(`📝 Found ${markdownFiles.length} markdown files to process`);
   
-  if (markdownFiles.length === 0) {
-    console.log('ℹ️  No markdown files found. Create .md files in the blog-markdown directory.');
-    return;
-  }
-  
+  // Get current slugs from markdown files
+  const currentSlugs = [];
   const newPosts = [];
   let nextId = getNextId(existingPosts);
   
@@ -214,6 +231,7 @@ function processMarkdownFiles() {
     
     // Generate blog post data
     const blogPostData = generateBlogPostData(markdownData, nextId++);
+    currentSlugs.push(blogPostData.slug);
     
     // Check if post already exists (force regeneration for styling updates)
     const existingPost = existingPosts.find(post => post.slug === blogPostData.slug);
@@ -233,23 +251,24 @@ function processMarkdownFiles() {
     console.log(`✅ Generated component: ${componentPath}`);
   }
   
-  if (newPosts.length > 0) {
-    // Merge existing posts with new/updated posts
-    const allPosts = [...existingPosts];
+  // Clean up deleted files
+  const cleanup = cleanupDeletedFiles(currentSlugs, existingPosts);
+  if (cleanup.deletedCount > 0) {
+    console.log(`\n🗑️  Cleaned up ${cleanup.deletedCount} deleted blog posts:`);
+    cleanup.deletedSlugs.forEach(slug => console.log(`   - ${slug}`));
+  }
+  
+  // Update blog data with only current posts
+  const finalPosts = newPosts.length > 0 ? newPosts : [];
+  
+  if (finalPosts.length > 0 || cleanup.deletedCount > 0) {
+    updateBlogDataFile(finalPosts);
+    console.log(`\n✅ Updated blog data with ${finalPosts.length} posts`);
+    console.log(`📊 Total posts: ${finalPosts.length}`);
     
-    // Replace existing posts or add new ones
-    newPosts.forEach(newPost => {
-      const existingIndex = allPosts.findIndex(post => post.slug === newPost.slug);
-      if (existingIndex !== -1) {
-        allPosts[existingIndex] = newPost; // Replace existing
-      } else {
-        allPosts.push(newPost); // Add new
-      }
-    });
-    
-    updateBlogDataFile(allPosts);
-    console.log(`\n✅ Updated blog data with ${newPosts.length} posts (regenerated)`);
-    console.log(`📊 Total posts: ${allPosts.length}`);
+    if (cleanup.deletedCount > 0) {
+      console.log(`🗑️  Removed ${cleanup.deletedCount} deleted posts from data`);
+    }
   } else {
     console.log('\n📝 No posts to process');
   }

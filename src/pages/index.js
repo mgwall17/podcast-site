@@ -86,7 +86,7 @@ export default function Home() {
                 colorScheme="purple" 
                 size="lg"
               >
-                Read Our Blog
+                View Blog
               </Button>
             </HStack>
           </Box>
@@ -112,7 +112,7 @@ export default function Home() {
                     Calling All Horror Fans!
                   </Heading> 
                   <Text fontSize="lg" lineHeight="tall" color="gray.300">
-                    My name is Jose Zaragoza, and as a fellow lover of all things scary, I'm thrilled to invite you on a journey through the world of horror movies. In each episode, I sit down with a random guest who, like you and me, has been profoundly impacted by a particular horror film. Together, we unravel the psychological layers that make these movies so captivating.
+                    My name is Jose Zaragoza, and as a fellow lover of all things scary, I'm thrilled to invite you on a journey through the world of horror movies. In each episode, I sit down with a guest who, like you and me, has been profoundly impacted by a particular horror film. Together, we unravel the psychological layers that make these movies so captivating.
                   </Text>
                 </Box>
 
@@ -147,7 +147,7 @@ export default function Home() {
                   </Heading>
                 </HStack>
                 <Text lineHeight="tall" color="gray.300">
-                  Join me once a month as I chat with a diverse range of guests—die-hard horror fans, first-time thrill-seekers, and everyone in between. We go beyond the standard movie review, digging into personal experiences, unexpected twists, and the lasting impressions these films leave on our minds.
+                  Join me as I chat with a diverse range of guests: die-hard horror fans, first-time thrill-seekers, and everyone in between. We go beyond the standard movie review, digging into personal experiences, unexpected twists, and the lasting impressions these films leave on our minds.
                 </Text>
               </Box>
 
@@ -166,7 +166,7 @@ export default function Home() {
                   </Heading>
                 </HStack>
                 <Text lineHeight="tall" color="gray.300">
-                  Horror Glass is all about unmasking the fears that resonate on a personal level. I'm here to share the untold stories behind the screams and explore the ways in which these films have left an indelible mark on the lives of my guests—and, hopefully, on yours too.
+                  Horror Glass is all about unmasking the fears that resonate on a personal level. I'm here to share the stories behind the screams and explore the ways in which these films have left an indelible (claw?) mark on the lives of my guests and, hopefully, on yours too.
                 </Text>
               </Box>
 
