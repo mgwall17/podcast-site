@@ -73,9 +73,9 @@ export default function Episodes() {
             <Heading as="h1" size="xl" mb={4}>
               Horror Glass Podcast Episodes
             </Heading>
-            <Text fontSize="lg" color="gray.400" maxW="2xl" mx="auto">
-              Explore our collection of horror film discussions, featuring psychological insights, 
-              guest perspectives, and deep dives into the movies that haunt our dreams.
+            <Text fontSize="lg" maxW="2xl" mx="auto">
+              Explore the collection of horror film discussions, featuring psychological insights, 
+              guest perspectives, and deep dives.
             </Text>
           </Box>
 

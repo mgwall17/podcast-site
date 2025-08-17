@@ -9,9 +9,11 @@
     "lint": "next lint",
     "generate-blog": "node scripts/generateBlogFromMarkdown.js",
     "generate-episodes": "node scripts/generateEpisodesFromMarkdown.js",
+    "generate-static": "node scripts/generateStaticFromMarkdown.js",
     "convert-episodes": "node scripts/convertJsonToMarkdown.js",
     "add-episode": "node scripts/addNewEpisode.js",
-    "update-content": "npm run generate-blog && npm run generate-episodes"
+    "update-content": "node scripts/updateAllContent.js",
+    "update-all": "node scripts/updateAllContent.js"
   },
   "dependencies": {
     "@chakra-ui/icons": "^2.1.1",

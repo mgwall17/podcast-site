@@ -25,21 +25,26 @@ export default function About() {
     "description": "Learn about Jose Zaragoza, the host of Horror Glass Podcast. A recent graduate with a Masters in Digital Marketing from Arizona State University, passionate about exploring the psychological impact of horror films.",
     "url": "https://horrorglassPodcast.com/about",
     "mainEntity": {
-      "@type": "Person",
-      "name": "Jose Zaragoza",
-      "jobTitle": "Podcast Host",
-      "description": "Host of Horror Glass Podcast, exploring the psychological impact of horror films with diverse guests.",
-      "alumniOf": {
-        "@type": "EducationalOrganization",
-        "name": "Arizona State University"
-      },
-      "knowsAbout": ["Horror Films", "Digital Marketing", "Podcast Production", "Film Analysis"],
-      "sameAs": [
-        "https://open.spotify.com/show/2TTfdtQ83xCbaSlv1yVdTt",
-        "https://www.linkedin.com/in/jose-zaragoza-ii-a1b448186/"
-      ]
+        "type": "Person",
+        "name": "Jose Zaragoza",
+        "jobTitle": "Podcast Host",
+        "description": "Host of Horror Glass Podcast, exploring the psychological impact of horror films with diverse guests.",
+        "alumniOf": {
+            "type": "EducationalOrganization",
+            "name": "Arizona State University"
+        },
+        "knowsAbout": [
+            "Horror Films",
+            "Digital Marketing",
+            "Podcast Production",
+            "Film Analysis"
+        ],
+        "sameAs": [
+            "https://open.spotify.com/show/2TTfdtQ83xCbaSlv1yVdTt",
+            "https://www.linkedin.com/in/jose-zaragoza-ii-a1b448186/"
+        ]
     }
-  };
+};
 
   return (
     <>
@@ -58,7 +63,7 @@ export default function About() {
             <Heading as="h1" size="2xl" mb={6}>
               About Jose Zaragoza
             </Heading>
-            <Text fontSize="xl" color="gray.600" maxW="2xl" mx="auto">
+            <Text fontSize="xl" maxW="2xl" mx="auto">
               Host of Horror Glass Podcast, exploring the psychological depths of horror cinema
             </Text>
           </Box>
@@ -87,7 +92,7 @@ export default function About() {
               mb={6}
             >
               <Text color="gray.700" fontWeight="semibold" fontSize="lg">
-                My name's Jose Zaragoza! <br/> Nice to meet you!
+                My name's Jose Zaragoza! Nice to meet you!
               </Text>
             </Box>
           </Box>
@@ -187,7 +192,7 @@ export default function About() {
                 rightIcon={<ExternalLinkIcon />}
                 aria-label="Connect on LinkedIn (opens in new tab)"
               >
-                LinkedIn Profile
+                Connect on LinkedIn
               </Button>
             </HStack>
           </Box>

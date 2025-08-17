@@ -203,9 +203,8 @@ export default function Blog() {
             <Heading as="h1" size="xl" mb={4}>
               Horror Glass Blog
             </Heading>
-            <Text fontSize="lg" color="gray.400" maxW="2xl" mx="auto">
-              Dive deep into the world of horror cinema with our analytical essays, film reviews, 
-              and explorations of the psychological themes that make horror so compelling.
+            <Text fontSize="lg" maxW="2xl" mx="auto">
+              A collection of my personal film reviews and explorations of the psychological themes that makes horror movies so compelling.
             </Text>
           </Box>
 
