@@ -55,6 +55,17 @@ const SearchAndFilter = ({
     );
   };
 
+  const getResultText = () => {
+    const itemType = type === 'episodes' ? 'episode' : type === 'blog' ? 'blog post' : type;
+    const pluralType = type === 'episodes' ? 'episodes' : type === 'blog' ? 'blog posts' : `${type}s`;
+    
+    if (resultCount === 1) {
+      return `1 ${itemType} found`;
+    } else {
+      return `${resultCount} ${pluralType} found`;
+    }
+  };
+
   return (
     <Box bg="gray.800" p={4} borderRadius="lg" mb={6}>
       <VStack spacing={4} align="stretch">
@@ -164,7 +175,7 @@ const SearchAndFilter = ({
           )}
 
           {/* Blog-specific filters */}
-          {type === 'blog' && (
+          {type === 'blogs' && (
             <>
               <FormControl maxW="150px">
                 <FormLabel htmlFor="category-filter" fontSize="sm">
@@ -214,7 +225,7 @@ const SearchAndFilter = ({
         {/* Results and Clear Filters */}
         <HStack justify="space-between" align="center">
           <Text fontSize="sm" color="gray.400">
-            {resultCount} {type} found
+            {getResultText()}
           </Text>
           
           {hasActiveFilters() && (

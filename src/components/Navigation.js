@@ -56,18 +56,26 @@ const Navigation = () => {
           </Link>
         </Flex>
         <HStack flex={{ base: 1, md: 0 }} justify={'flex-end'} spacing={6}>
-          <Button colorScheme={"purple"} display={{ base: 'none', md: 'inline-flex' }} as={Link} href="/Episodes" fontSize={'sm'} fontWeight={400}>
-            Episodes
-          </Button>
-          <Button colorScheme={"purple"} display={{ base: 'none', md: 'inline-flex' }} as={Link} href="/Blog" fontSize={'sm'} fontWeight={400}>
-            Blog
-          </Button>
-          <Button colorScheme={"purple"} display={{ base: 'none', md: 'inline-flex' }} as={Link} href="/About" fontSize={'sm'} fontWeight={400}>
-            About
-          </Button>
-          <Button colorScheme={"purple"} display={{ base: 'none', md: 'inline-flex' }} as={Link} href="/Contact" fontSize={'sm'} fontWeight={400}>
-            Contact
-          </Button>
+          <Link href="/Episodes">
+            <Button colorScheme={"purple"} display={{ base: 'none', md: 'inline-flex' }} fontSize={'sm'} fontWeight={400}>
+              Episodes
+            </Button>
+          </Link>
+          <Link href="/Blog">
+            <Button colorScheme={"purple"} display={{ base: 'none', md: 'inline-flex' }} fontSize={'sm'} fontWeight={400}>
+              Blog
+            </Button>
+          </Link>
+          <Link href="/About">
+            <Button colorScheme={"purple"} display={{ base: 'none', md: 'inline-flex' }} fontSize={'sm'} fontWeight={400}>
+              About
+            </Button>
+          </Link>
+          <Link href="/Contact">
+            <Button colorScheme={"purple"} display={{ base: 'none', md: 'inline-flex' }} fontSize={'sm'} fontWeight={400}>
+              Contact
+            </Button>
+          </Link>
         </HStack>
       </Flex>
       <Collapse in={isOpen} animateOpacity>
@@ -101,7 +109,7 @@ const MobileNav = ({ isOpen, onToggle, showAlert, setShowAlert }) => {
 const MobileNavItem = ({ children, href }) => {
   return (
     <Box>
-      <Link href={href} passHref>
+      <Link href={href}>
         <Button
           width="100%"
           p={8}

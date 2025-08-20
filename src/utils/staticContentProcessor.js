@@ -244,13 +244,13 @@ export default function About() {
           {/* Call to Action */}
           <Box textAlign="center">
             <HStack spacing={4} justify="center" wrap="wrap">
-              <Link href="/Episodes" passHref>
-                <Button colorScheme="purple" size="lg" as="a">
+              <Link href="/Episodes">
+                <Button colorScheme="purple" size="lg">
                   Listen to Episodes
                 </Button>
               </Link>
-              <Link href="/Blog" passHref>
-                <Button variant="outline" colorScheme="purple" size="lg" as="a">
+              <Link href="/Blog">
+                <Button variant="outline" colorScheme="purple" size="lg">
                   Read the Blog
                 </Button>
               </Link>

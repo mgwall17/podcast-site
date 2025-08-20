@@ -6,8 +6,8 @@ import NextLink from "next/link";
 import SEO from "../../components/SEO";
 import { blogPostsData, getBlogPostStructuredData, getRelatedPosts } from "../../utils/blogData";
 
-export default function TheThingthathauntsmydreams() {
-  const post = blogPostsData.find(p => p.slug === "The-Thing-that-haunts-my-dreams");
+export default function HorrorfilmsandthePoliticalWorldPartOne() {
+  const post = blogPostsData.find(p => p.slug === "Horror-films-and-the-Political-World-Part-One");
   const relatedPosts = getRelatedPosts(post, 2);
 
   const postStructuredData = getBlogPostStructuredData(post);
@@ -160,56 +160,30 @@ export default function TheThingthathauntsmydreams() {
               >
                 <Box as="section" maxW="none" color={textColor}>
                   
-              <Text mb={6} fontSize="lg" lineHeight="1.8" color={textColor}>Released in 1982, this cinematic masterpiece not only redefined the horror genre but also left an indelible mark on both cinema and popular culture.</Text>
-              <Heading as="h2" size="lg" mb={6} mt={10} color={headingColor} borderBottom="3px solid" borderColor={borderColor} pb={3}>A Cinematic Revolution</Heading>
-              <Text mb={6} fontSize="lg" lineHeight="1.8" color={textColor}>From the moment the ominous score by Ennio Morricone begins to play, "The Thing" sets a chilling tone that persists throughout its runtime. Carpenter's masterful direction, coupled with groundbreaking special effects by Rob Bottin, elevated the film to a level of visual and atmospheric horror previously unseen. The alien creature, with its grotesque transformations and unsettling mimicry, pushed the boundaries of practical effects and forever altered the landscape of creature features in cinema.</Text>
-              <Heading as="h2" size="lg" mb={6} mt={10} color={headingColor} borderBottom="3px solid" borderColor={borderColor} pb={3}>Cultural Impact</Heading>
-              <Text mb={6} fontSize="lg" lineHeight="1.8" color={textColor}>"The Thing" wasn't just a film; it was a cultural phenomenon that resonated far beyond the confines of the movie theater. Its exploration of paranoia and distrust in an isolated Antarctic outpost mirrored the anxieties of the Cold War era. The film's stark portrayal of a group unraveling under the threat of an unseen enemy struck a chord, making it a timeless reflection of societal fears.</Text>
-              <Heading as="h2" size="lg" mb={6} mt={10} color={headingColor} borderBottom="3px solid" borderColor={borderColor} pb={3}>Legacy in Horror Cinema</Heading>
-              <Text mb={6} fontSize="lg" lineHeight="1.8" color={textColor}>Decades later, "The Thing" remains a touchstone for horror filmmakers. Its influence can be seen in subsequent works that explore the psychological horror of isolation and the visceral terror of shape-shifting entities. The film's emphasis on suspense, practical effects, and atmospheric tension has become a blueprint for horror directors seeking to elicit genuine fear from their audiences.</Text>
-              <Heading as="h2" size="lg" mb={6} mt={10} color={headingColor} borderBottom="3px solid" borderColor={borderColor} pb={3}>Cult Following and Homages</Heading>
-              <Text mb={6} fontSize="lg" lineHeight="1.8" color={textColor}>"The Thing" has amassed a devoted cult following that celebrates its nuanced storytelling and groundbreaking effects. From video games to comic books, its legacy extends to various mediums. The film has been the subject of homage and reference in works across genres, showcasing its enduring impact on popular culture.</Text>
-              <Text mb={6} fontSize="lg" lineHeight="1.8" color={textColor}>Most notably, the game Among Us that has our kids enraptured with mobile and PC gaming, is a direct homage to the film. The game's premise of a group of crewmates trying to identify an alien imposter is a direct reference to the film's plot. The game's popularity is a testament to the enduring legacy of "The Thing" and its ability to captivate audiences across generations.</Text>
-              <Heading as="h2" size="lg" mb={6} mt={10} color={headingColor} borderBottom="3px solid" borderColor={borderColor} pb={3}>A Frozen Classic</Heading>
-              <Text mb={6} fontSize="lg" lineHeight="1.8" color={textColor}>In reflecting on the impact of John Carpenter's "The Thing," it's evident that its influence goes beyond the horror genre. This frozen nightmare has left an indelible mark on cinema, inspiring filmmakers and captivating audiences with its visceral terror and psychological depth. As a horror enthusiast, I find myself returning to the frozen wastes of Antarctica, where the alien entity lurks, reshaping my understanding of fear and storytelling with each viewing. "The Thing" isn't just a film; it's a classic that continues to freeze the hearts of those willing to confront its chilling mysteries.</Text>
-              
+              <Text mb={6} fontSize="lg" lineHeight="1.8" color={textColor}>Horror films have always been more than just scares and monsters, they are a mirror reflecting the anxieties and fears of their time. Beneath the blood and screams lie sharp commentaries on politics, power, and the state of the world. From WWI to Cold War paranoia fueling Invasion of the Body Snatchers to the racial tensions exposed in Get Out, horror uses fear to critique the systems that govern us.</Text>
+              <Heading as="h3" size="md" mb={6} mt={8} color={headingColor} borderBottom="2px solid" borderColor={borderColor} pb={2}>The Golden Era: Bela Lugosi and WWI Anxieties</Heading>
+              <Text mb={6} fontSize="lg" lineHeight="1.8" color={textColor}>The golden era of horror films produced the most popular and well-known horror star of all time, Bela Lugosi, who starred as the famous vampire Count Dracula. After starring in Dracula (1931), Lugosi would find success in the horror genre appearing in other films such as The Black Cat (1934), The Raven (1935), The Invisible Ray (1936), Son of Frankenstein (1939), Black Friday (1940), and The Wolfman (1941).</Text>
+              <Text mb={6} fontSize="lg" lineHeight="1.8" color={textColor}>What made these monsters that Bela played so popular? The answer is World War I. The war completely changed the shape of the world, leaving many people without homes and seeking new ones. But not everyone was welcoming newcomers into their country. They viewed these people as outsiders and as "the other" - a term used in horror.</Text>
+              <Text mb={6} fontSize="lg" lineHeight="1.8" color={textColor}>With this comes Dracula/Nosferatu. The fear that people had about vampires in the film's world mirrored similar fears that people had in real life: fear of new cultures, having to share land and resources, and not wanting people of one land to mix with another. The monsters created in horror were the fears that directors and creators experienced during and after WWI.</Text>
+              <Heading as="h2" size="lg" mb={6} mt={10} color={headingColor} borderBottom="3px solid" borderColor={borderColor} pb={3}>WWII: The War Effort Takes Center Stage</Heading>
+              <Text mb={6} fontSize="lg" lineHeight="1.8" color={textColor}>During World War 2, the horror genre took a step back. From radio to film, it was all about the war effort. This is why we see Hollywood monsters such as the Invisible Man star in a film as a hero agent in Invisible Agent, complete opposite of being a villain as in the original. Disney, Looney Tunes, Superman and more characters starred in World War 2 skits about the war against Nazi Germany and Imperial Japan.</Text>
+              <Heading as="h2" size="lg" mb={6} mt={10} color={headingColor} borderBottom="3px solid" borderColor={borderColor} pb={3}>The Atomic Era: Godzilla and Nuclear Anxieties</Heading>
+              <Text mb={6} fontSize="lg" lineHeight="1.8" color={textColor}>Following World War II, horror cinema returned with a new focus on the lingering trauma and technological aftermath of the war. This period gave rise to the atomic era of filmmaking, where the horrors unleashed by nuclear weapons inspired some of the genre's most iconic monsters.</Text>
+              <Text mb={6} fontSize="lg" lineHeight="1.8" color={textColor}>The most popular monster created was Godzilla, a direct response to the American nuclear attacks on Hiroshima and Nagasaki. While nuclear power was often framed as heroic in the West, in Japan the bombs had devastating effects. Godzilla embodied this trauma, a towering symbol of the scars left by the atomic bomb.</Text>
+              <Text mb={6} fontSize="lg" lineHeight="1.8" color={textColor}>The monster Rodan, introduced two years later, carried similar nuclear anxieties but tapped into new fears born by the Cold War. By the mid-1950s, the Soviet Union's advancements in long-range aircraft and intercontinental ballistic missiles had made aerial annihilation terrifyingly real.</Text>
+              <Heading as="h2" size="lg" mb={6} mt={10} color={headingColor} borderBottom="3px solid" borderColor={borderColor} pb={3}>Cold War Paranoia: Invasion of the Body Snatchers</Heading>
+              <Text mb={6} fontSize="lg" lineHeight="1.8" color={textColor}>The 1950s were an age of suspicion and fear. As the Cold War escalated, Americans lived under the constant shadow of nuclear annihilation and the creeping dread of communist infiltration. McCarthyism turned paranoia into policy, and the idea of an unseen enemy hiding in plain sight became a national obsession.</Text>
+              <Text mb={6} fontSize="lg" lineHeight="1.8" color={textColor}>Invasion of the Body Snatchers brought these fears to the silver screen. In the film, ordinary people are replaced by emotionless "pod people" who look identical but lack humanity. For 1950s audiences, this story mirrored the terror of communism - an ideology that people believed could turn friends, family, and entire communities into strangers overnight.</Text>
+              <Text mb={6} fontSize="lg" lineHeight="1.8" color={textColor}>Yet the film's horror cuts both ways, also critiquing America's own culture of conformity. Its ambiguous ending left audiences asking a haunting question: are we more afraid of the enemy outside, or the one we become inside?</Text>
+              <Heading as="h2" size="lg" mb={6} mt={10} color={headingColor} borderBottom="3px solid" borderColor={borderColor} pb={3}>The 1970s: Occult Fears and Human Brutality</Heading>
+              <Text mb={6} fontSize="lg" lineHeight="1.8" color={textColor}>Many horror films from the 70s dealt with the fear and dangers of occults. In 1969, a series of murders caused by Charles Manson and his followers made people more aware of occults. With Charles Manson, the public eye was on occults and they now had a new fear.</Text>
+              <Text mb={6} fontSize="lg" lineHeight="1.8" color={textColor}>Wes Craven's The Last House on the Left (1972) pushed horror into raw, unsettling territory that reflected the turbulent times. It stripped away supernatural elements, grounding its horror in the brutality of human nature. Unlike the fantastical monsters of earlier decades, the villains here were all too real - products of a society wrestling with the Vietnam War, political corruption, and eroding trust in authority.</Text>
+              <Text mb={6} fontSize="lg" lineHeight="1.8" color={textColor}>Films such as The Omen (1976) and The Wicker Man (1973) brought cult fears into cinema. These anxieties persisted into the following decades, as seen in Netflix's Stranger Things, where D&D players are viewed as occult members by those who don't understand the game.</Text>
+              <Heading as="h2" size="lg" mb={6} mt={10} color={headingColor} borderBottom="3px solid" borderColor={borderColor} pb={3}>A Timeless Terror</Heading>
+              <Text mb={6} fontSize="lg" lineHeight="1.8" color={textColor}>By tapping into cultural unease, horror films transform political anxieties into living nightmares, making audiences confront uncomfortable truths they might otherwise ignore. Horror continues to serve as society's dark mirror, reflecting our deepest fears and anxieties back at us through the language of monsters and mayhem.</Text>
                 </Box>
               </Box>
 
-              
-              {/* Movie Information Box */}
-              <Box 
-                bg={cardBg}
-                borderRadius="xl" 
-                boxShadow="xl" 
-                p={6}
-                border="1px solid"
-                borderColor={borderColor}
-                borderLeft="6px solid"
-                borderLeftColor="purple.500"
-              >
-                <Heading as="h3" size="md" mb={4} color={headingColor}>
-                  🎬 About the Movie
-                </Heading>
-                <VStack align="start" spacing={3}>
-                  <HStack>
-                    <Text fontWeight="bold" color={headingColor}>Title:</Text>
-                    <Text color={textColor}>{post.relatedMovie.title}</Text>
-                  </HStack>
-                  <HStack>
-                    <Text fontWeight="bold" color={headingColor}>Director:</Text>
-                    <Text color={textColor}>{post.relatedMovie.director}</Text>
-                  </HStack>
-                  <HStack>
-                    <Text fontWeight="bold" color={headingColor}>Year:</Text>
-                    <Text color={textColor}>{post.relatedMovie.year}</Text>
-                  </HStack>
-                  <HStack>
-                    <Text fontWeight="bold" color={headingColor}>Genre:</Text>
-                    <Text color={textColor}>{post.relatedMovie.genre || 'Horror'}</Text>
-                  </HStack>
-                </VStack>
-              </Box>
               
 
               {/* Categories & Related Posts Section */}
@@ -259,7 +233,7 @@ export default function TheThingthathauntsmydreams() {
                     </Heading>
                     <VStack spacing={4} align="stretch">
                       {relatedPosts.map((relatedPost) => (
-                        <NextLink key={relatedPost.id} href={`/Blog/${relatedPost.slug}`} passHref>
+                        <NextLink key={relatedPost.id} href={`/Blog/${relatedPost.slug}`}>
                           <Box
                             p={4}
                             borderWidth="1px"
@@ -292,9 +266,8 @@ export default function TheThingthathauntsmydreams() {
 
               {/* Back to Blog */}
               <Box textAlign="center" pt={4}>
-                <NextLink href="/Blog" passHref>
+                <NextLink href="/Blog">
                   <Box
-                    as="a"
                     display="inline-flex"
                     alignItems="center"
                     px={6}
@@ -309,6 +282,7 @@ export default function TheThingthathauntsmydreams() {
                     }}
                     transition="all 0.2s"
                     boxShadow="lg"
+                    cursor="pointer"
                   >
                     ← Back to All Posts
                   </Box>

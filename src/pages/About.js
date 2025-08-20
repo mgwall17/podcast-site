@@ -63,7 +63,7 @@ export default function About() {
             <Heading as="h1" size="2xl" mb={6}>
               About Jose Zaragoza
             </Heading>
-            <Text fontSize="xl" maxW="2xl" mx="auto">
+            <Text fontSize="xl" color="gray.600" maxW="2xl" mx="auto">
               Host of Horror Glass Podcast, exploring the psychological depths of horror cinema
             </Text>
           </Box>
@@ -210,13 +210,13 @@ export default function About() {
           {/* Call to Action */}
           <Box textAlign="center">
             <HStack spacing={4} justify="center" wrap="wrap">
-              <Link href="/Episodes" passHref>
-                <Button colorScheme="purple" size="lg" as="a">
+              <Link href="/Episodes">
+                <Button colorScheme="purple" size="lg">
                   Listen to Episodes
                 </Button>
               </Link>
-              <Link href="/Blog" passHref>
-                <Button variant="outline" colorScheme="purple" size="lg" as="a">
+              <Link href="/Blog">
+                <Button variant="outline" colorScheme="purple" size="lg">
                   Read the Blog
                 </Button>
               </Link>

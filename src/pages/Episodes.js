@@ -145,17 +145,17 @@ export default function Episodes() {
               )}
 
               {/* Upcoming Episodes */}
-              {upcomingEpisodes.length > 0 && (
-                <Box as="section" aria-labelledby="upcoming-episodes">
-                  <Heading 
-                    id="upcoming-episodes"
-                    as="h2" 
-                    size="lg" 
-                    textAlign="center" 
-                    mb={6}
-                  >
-                    Upcoming Episodes ({upcomingEpisodes.length})
-                  </Heading>
+              <Box as="section" aria-labelledby="upcoming-episodes">
+                <Heading 
+                  id="upcoming-episodes"
+                  as="h2" 
+                  size="lg" 
+                  textAlign="center" 
+                  mb={6}
+                >
+                  Upcoming Episodes ({upcomingEpisodes.length})
+                </Heading>
+                {upcomingEpisodes.length > 0 ? (
                   <SimpleGrid columns={{ base: 1, md: 1, lg:2 }} spacing={6}>
                     {upcomingEpisodes.map((episode) => (
                       <MovieCard
@@ -178,8 +178,14 @@ export default function Episodes() {
                       />
                     ))}
                   </SimpleGrid>
-                </Box>
-              )}
+                ) : (
+                  <Box textAlign="center" py={8}>
+                    <Text fontSize="md" color="gray.500">
+                      No upcoming episodes match your search criteria.
+                    </Text>
+                  </Box>
+                )}
+              </Box>
             </Stack>
           )}
         </VStack>

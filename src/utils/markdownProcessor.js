@@ -360,7 +360,7 @@ export default function ${frontmatter.slug.replace(/-/g, '').replace(/^./, str =
                     </Heading>
                     <VStack spacing={4} align="stretch">
                       {relatedPosts.map((relatedPost) => (
-                        <NextLink key={relatedPost.id} href={\`/Blog/\${relatedPost.slug}\`} passHref>
+                        <NextLink key={relatedPost.id} href={\`/Blog/\${relatedPost.slug}\`}>
                           <Box
                             p={4}
                             borderWidth="1px"
@@ -393,9 +393,8 @@ export default function ${frontmatter.slug.replace(/-/g, '').replace(/^./, str =
 
               {/* Back to Blog */}
               <Box textAlign="center" pt={4}>
-                <NextLink href="/Blog" passHref>
+                <NextLink href="/Blog">
                   <Box
-                    as="a"
                     display="inline-flex"
                     alignItems="center"
                     px={6}
@@ -410,6 +409,7 @@ export default function ${frontmatter.slug.replace(/-/g, '').replace(/^./, str =
                     }}
                     transition="all 0.2s"
                     boxShadow="lg"
+                    cursor="pointer"
                   >
                     ← Back to All Posts
                   </Box>

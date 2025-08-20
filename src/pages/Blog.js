@@ -41,7 +41,7 @@ const BlogPostCard = ({ post }) => {
       role="article"
       aria-labelledby={`blog-title-${post.id}`}
     >
-      <Link href={`/Blog/${post.slug}`} passHref>
+      <Link href={`/Blog/${post.slug}`}>
         <Box cursor="pointer">
           {post.image && (
             <Image
