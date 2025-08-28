@@ -1,5 +1,5 @@
 ---
-title: "Ready to Dive Into Horror?"
+title: "Ready to Dive into More Horror?"
 description: "Start your journey with our latest episodes and discover the psychological depths of your favorite horror films."
 callToAction:
   primary:

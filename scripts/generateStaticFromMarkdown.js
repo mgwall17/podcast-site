@@ -145,13 +145,23 @@ import { Heading, Container, Hide, Center, HStack, StackDivider, VStack, Stack, 
 import { MoonIcon, ExternalLinkIcon } from '@chakra-ui/icons'
 import Link from 'next/link'
 import SEO from '../components/SEO'
+import EpisodePlaylist from '../components/EpisodePlaylist'
 import { homePageData, homeStructuredData } from '../utils/homeData'
+import { episodesData, getPublishedEpisodes, sortEpisodes } from '../utils/episodeData'
 
 export default function Home() {
   const hero = homePageData.hero || {};
   const introduction = homePageData.introduction || {};
   const features = homePageData.features || {};
   const subscribe = homePageData.subscribe || {};
+
+  // Configuration: Set how many recent episodes to show (1-3)
+  const numberOfEpisodesToShow = 3; // Change this to 1, 2, or 3 as needed
+  
+  // Get the most recent published episodes
+  const publishedEpisodes = getPublishedEpisodes(episodesData);
+  const sortedEpisodes = sortEpisodes(publishedEpisodes, 'date', 'desc');
+  const recentEpisodes = sortedEpisodes.slice(0, numberOfEpisodesToShow);
 
   return (
     <>
@@ -235,46 +245,29 @@ export default function Home() {
                     {introduction.description || "My name is Jose Zaragoza, and as a fellow lover of all things scary, I'm thrilled to invite you on a journey through the world of horror movies."}
                   </Text>
                 </Box>
-
-                <Heading 
-                  as="h2" 
-                  size="lg" 
-                  textAlign="center"
-                  color="purple.400"
-                  id="about-section"
-                >
-                  {introduction.aboutTitle || "So what is Horror Glass about?"}
-                </Heading>
               </VStack>
             </Center>
           </Box>
 
-          {/* Features Section */}
-          <Box as="section" aria-labelledby="about-section">
-            <SimpleGrid columns={[1, 1, 2]} spacing={8} maxW="6xl" mx="auto">
-              {(features.features || []).map((feature, index) => (
-                <Box 
-                  key={index}
-                  as="article"
-                  p={6}
-                  borderRadius="lg"
-                  bg="gray.800"
-                  _hover={{ bg: "gray.700" }}
-                  transition="background 0.2s"
-                >
-                  <HStack mb={4}>
-                    <MoonIcon color="purple.400" boxSize={6} />
-                    <Heading as="h3" size="md" color="purple.300">
-                      {feature.title}
-                    </Heading>
-                  </HStack>
-                  <Text lineHeight="tall" color="gray.300">
-                    {feature.description}
-                  </Text>
-                </Box>
-              ))}
-            </SimpleGrid>
-          </Box>
+          {/* Recent Episodes Playlist Section */}
+          {recentEpisodes.length > 0 && (
+            <Box as="section" aria-labelledby="recent-episodes">
+              <Heading 
+                id="recent-episodes"
+                as="h2" 
+                size="xl" 
+                mb={6}
+                textAlign="center"
+                color="purple.400"
+              >
+                Latest Episodes
+              </Heading>
+              <EpisodePlaylist 
+                episodes={recentEpisodes} 
+                title="Recent Episodes"
+              />
+            </Box>
+          )}
 
           {/* Subscribe Section */}
           <Box 

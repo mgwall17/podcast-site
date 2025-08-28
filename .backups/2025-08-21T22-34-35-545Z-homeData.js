@@ -5,6 +5,16 @@ export const homePageData = {
   "features": {
     "features": [
       {
+        "title": "Sharing Chills",
+        "icon": "MoonIcon",
+        "description": "Join me as I chat with a diverse range of guests: die-hard horror fans, first-time thrill-seekers, and everyone in between. We go beyond the standard movie review, digging into personal experiences, unexpected twists, and the lasting impressions these films leave on our minds."
+      },
+      {
+        "title": "Unveiling Personal Fears",
+        "icon": "MoonIcon",
+        "description": "Horror Glass is all about unmasking the fears that resonate on a personal level. I'm here to share the stories behind the screams and explore the ways in which these films have left an indelible (claw?) mark on the lives of my guests and, hopefully, on yours too."
+      },
+      {
         "title": "Meet Our Fearful Community",
         "icon": "MoonIcon",
         "description": "Our guests are as diverse as the horror genre itself. Artists, academics, and everyday fans. Everyone is invited to join the conversation. Share your thoughts, become part of a community where our collective love for horror binds us together, and experience the profound impact that these movies have on real people."
@@ -48,7 +58,7 @@ export const homePageData = {
     "content": "\n# Calling All Horror Fans!\n\nMy name is Jose Zaragoza, and as a fellow lover of all things scary, I'm thrilled to invite you on a journey through the world of horror movies. In each episode, I sit down with a guest who, like you and me, has been profoundly impacted by a particular horror film. Together, we unravel the psychological layers that make these movies so captivating.\n\n## So what is Horror Glass about?\n"
   },
   "subscribe": {
-    "title": "Ready to Dive into More Horror?",
+    "title": "Ready to Dive Into Horror?",
     "description": "Start your journey with our latest episodes and discover the psychological depths of your favorite horror films.",
     "callToAction": {
       "primary": {

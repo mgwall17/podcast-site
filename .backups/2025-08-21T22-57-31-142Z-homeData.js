@@ -48,7 +48,7 @@ export const homePageData = {
     "content": "\n# Calling All Horror Fans!\n\nMy name is Jose Zaragoza, and as a fellow lover of all things scary, I'm thrilled to invite you on a journey through the world of horror movies. In each episode, I sit down with a guest who, like you and me, has been profoundly impacted by a particular horror film. Together, we unravel the psychological layers that make these movies so captivating.\n\n## So what is Horror Glass about?\n"
   },
   "subscribe": {
-    "title": "Ready to Dive into More Horror?",
+    "title": "Ready to Dive Into Horror?",
     "description": "Start your journey with our latest episodes and discover the psychological depths of your favorite horror films.",
     "callToAction": {
       "primary": {
