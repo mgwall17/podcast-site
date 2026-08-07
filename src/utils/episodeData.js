@@ -127,32 +127,6 @@ export const episodesData = [
   },
   {
     "id": 6,
-    "title": "28 Days Later",
-    "slug": "28-days-later",
-    "image": "/28days.jpg",
-    "movieYear": "2002",
-    "director": "Danny Boyle",
-    "summary": "After a mysterious, highly contagious virus known as 'Rage' is unleashed, turning infected individuals into hyper-aggressive, bloodthirsty creatures, a small group of survivors navigates a desolate, post-apocalyptic London. The film explores the breakdown of society, the nature of humanity under extreme duress, and the constant threat of both the infected and other desperate survivors.",
-    "isPublished": false,
-    "publishDate": "2025-09-31",
-    "publishDateFormatted": "Septeber 2025",
-    "guest": "Mariah discusses how '28 Days Later' profoundly explores themes of violence, the psyche and who we really are when the chips are down.",
-    "spotifyEmbed": "<iframe style=\"border-radius:12px\" src=\"https://open.spotify.com/embed/episode/1iTAtpec5HODMboWwOn7Kz?utm_source=generator\" width=\"100%\" height=\"152\" frameBorder=\"0\" allowfullscreen=\"\" allow=\"autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture\" loading=\"lazy\"></iframe>",
-    "genres": [
-      "Sci-Fi",
-      "Psychological"
-    ],
-    "scareLevel": 5,
-    "triggerWarnings": [
-      "Gore",
-      "Violence",
-      "Pandemic",
-      "Body Horror (Rage Virus effects)"
-    ],
-    "duration": "113 minutes"
-  },
-  {
-    "id": 7,
     "title": "Sinners",
     "slug": "sinners",
     "image": "/sinners.jpg",
@@ -178,7 +152,7 @@ export const episodesData = [
     "duration": "130 minutes"
   },
   {
-    "id": 8,
+    "id": 7,
     "title": "Halloween",
     "slug": "halloween",
     "image": "/Halloween.jpeg",
@@ -203,7 +177,7 @@ export const episodesData = [
     "duration": "52 minutes"
   },
   {
-    "id": 9,
+    "id": 8,
     "title": "The Autopsy of Jane Doe",
     "slug": "autopsy-jane-doe",
     "image": "/JaneDoe.jpg",
@@ -226,6 +200,32 @@ export const episodesData = [
       "Supernatural Elements"
     ],
     "duration": "46 minutes"
+  },
+  {
+    "id": 9,
+    "title": "28 Days Later",
+    "slug": "28-days-later",
+    "image": "/28days.jpg",
+    "movieYear": "2002",
+    "director": "Danny Boyle",
+    "summary": "After a mysterious, highly contagious virus known as 'Rage' is unleashed, turning infected individuals into hyper-aggressive, bloodthirsty creatures, a small group of survivors navigates a desolate, post-apocalyptic London. The film explores the breakdown of society, the nature of humanity under extreme duress, and the constant threat of both the infected and other desperate survivors.",
+    "isPublished": true,
+    "publishDate": "2026-05-17",
+    "publishDateFormatted": "May 2026",
+    "guest": "Mariah discusses how '28 Days Later' profoundly explores themes of violence, the psyche and who we really are when the chips are down.",
+    "spotifyEmbed": "<iframe style=\"border-radius:12px\" src=\"https://open.spotify.com/embed/episode/2naYPD80kB9tadXC89oKk4?utm_source=generator&si=b1a124f0d3af4e5b\" width=\"100%\" height=\"352\" frameBorder=\"0\" allowfullscreen=\"\" allow=\"autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture\" loading=\"lazy\"></iframe>",
+    "genres": [
+      "Sci-Fi",
+      "Psychological"
+    ],
+    "scareLevel": 5,
+    "triggerWarnings": [
+      "Gore",
+      "Violence",
+      "Pandemic",
+      "Body Horror (Rage Virus effects)"
+    ],
+    "duration": "113 minutes"
   }
 ];
 

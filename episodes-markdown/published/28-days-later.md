@@ -2,9 +2,9 @@
 # Episode Information
 title: "28 Days Later"
 slug: "28-days-later"
-isPublished: false
-publishDate: "2025-09-31"
-publishDateFormatted: "Septeber 2025"
+isPublished: true
+publishDate: "2026-05-17"
+publishDateFormatted: "May 2026"
 duration: "113 minutes"
 
 # Movie Information
@@ -18,7 +18,7 @@ triggerWarnings: ["Gore","Violence","Pandemic","Body Horror (Rage Virus effects)
 
 # Podcast Content
 guest: "Mariah discusses how '28 Days Later' profoundly explores themes of violence, the psyche and who we really are when the chips are down."
-spotifyEmbed: '<iframe style="border-radius:12px" src="https://open.spotify.com/embed/episode/1iTAtpec5HODMboWwOn7Kz?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>'
+spotifyEmbed: '<iframe style="border-radius:12px" src="https://open.spotify.com/embed/episode/2naYPD80kB9tadXC89oKk4?utm_source=generator&si=b1a124f0d3af4e5b" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>'
 ---
 # Movie Summary
 

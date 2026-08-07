@@ -1,13 +1,13 @@
 ---
 features:
-  - title: "Meet Our Fearful Community"
+  - title: "Who I Interview"
     icon: "MoonIcon"
-    description: "Our guests are as diverse as the horror genre itself. Artists, academics, and everyday fans. Everyone is invited to join the conversation. Share your thoughts, become part of a community where our collective love for horror binds us together, and experience the profound impact that these movies have on real people."
+    description: "My guests are as diverse as the horror genre itself. I interview everyday fans; Students, friends, coworkers, retired folks, friends made in a cafe or the street. Guests come from all walks of life, and that colors their interpretations of horror in different and unpredicatable ways. If you're interested in being on an episode, sent me an email and I'd be happy to make it work."
   - title: "Never Miss a Terrifying Tale"
     icon: "MoonIcon"
-    description: "Don't want to miss out on the scares and insights? Subscribe to Horror Glass Podcast and join me each month for a new guest, a new movie, and a fresh exploration of the psychological terrain that makes horror cinema so uniquely captivating."
+    description: "Don't want to miss out on the scares and insights? Subscribe to Horror Glass Podcast and never miss a new guest, a new movie, and a fresh exploration of how horror films impact us."
 ---
 
 # What Makes Horror Glass Special
 
-Discover what sets our podcast apart in the world of horror film discussions.
+Discover what sets this podcast apart in the world of horror film discussions.
