@@ -4,7 +4,7 @@ title: "Sinners"
 slug: "sinners"
 isPublished: false
 publishDate: "2025-10-15"
-publishDateFormatted: "October 2025"
+publishDateFormatted: "Coming Soon"
 duration: "130 minutes"
 
 # Movie Information
